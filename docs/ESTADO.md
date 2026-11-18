@@ -1,6 +1,15 @@
 # Estado del proyecto
 
-Última actualización: 18 de noviembre de 2026, noche (órbita uniforme con 8 y 6 ventanas; sin publicar ni hacer commits).
+Última actualización: 18 de noviembre de 2026, noche (cúpula de pantallas; repositorio por hacerse público con GitHub Pages).
+
+## 18 nov 2026, noche: cúpula de pantallas y enlace de GitHub Pages
+
+- **Balance con la referencia** (pedido de Jenny, viendo la PC). La persona se ve más pequeña (44 % del alto del hero en PC, 42 % en teléfono) y está un poco más arriba del borde. Las 8 ventanas con nombre quedan más cerca de ella. Encima se agregó una cúpula de tres anillos de pantallas pequeñas, solo con imagen (28, 32 y 36 en PC; 12, 14 y 16 en teléfono), que giran junto con las ventanas en el mismo sentido, con la misma velocidad y con separación uniforme. Las pantallas pequeñas siempre quedan detrás de las ventanas con nombre y de la persona. En Chrome, en 6 anchos, la superposición máxima entre ventanas con nombre es del 5 % en PC y del 0 % en teléfono. Sin errores. Falta la prueba en el teléfono de Jenny.
+- **Enlace para el comité:** Jenny eligió hacer público el repositorio y usar GitHub Pages (ver DECISIONES-VIGENTES). Se agregaron `index.html` en la raíz, que lleva a la maqueta, y `.nojekyll`. La copia publicada en Claude queda reemplazada por este enlace.
+
+## 18 nov 2026, noche: copia para el comité
+
+Copia de la maqueta publicada como página privada de Claude para que la revise el comité: "Ethical Shields Group · Propuesta de homepage para el comité", https://claude.ai/artifact/TP96jmDBpF1rEEZ25jmxq6. Es igual a `diseno/maqueta/`, con rutas planas y la foto de fondo y el recorte en WebP (22 y 26 KB). Comprobada en Chrome en 6 anchos, sin errores. Solo la ve Jenny hasta que ella la comparta. No es el sitio ni el entorno de prueba de Cloudflare. Si la maqueta cambia, la copia hay que volver a publicarla.
 
 ## 18 nov 2026, noche: paso uniforme y sincronizado (pedido de Jenny)
 

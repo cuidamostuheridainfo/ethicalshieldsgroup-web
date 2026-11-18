@@ -66,6 +66,16 @@
     });
     mundo.appendChild(n);nodos.push({nodo:n,datos:e,indice:i,x:0,y:0,movil:enMovil.indexOf(e.id)>=0,pc:enPC.indexOf(e.id)>=0});
   });
+  // Cúpula (18 nov, noche): anillos de pantallas pequeñas, solo imagen, que giran junto con las ventanas.
+  var mosaico=[], fuentes=['cth','cumbre','medical','ai'], encuadres=['10% 20%','50% 30%','90% 25%','30% 70%','70% 60%','0% 50%','100% 40%','60% 10%'];
+  var ANILLOS={pc:[{n:28,w:.07,y:.515,rx:.42,ry:.05},{n:32,w:.06,y:.405,rx:.46,ry:.045},{n:36,w:.052,y:.305,rx:.49,ry:.04}],
+               movil:[{n:12,w:.2,y:.53,rx:.5,ry:.04},{n:14,w:.17,y:.43,rx:.53,ry:.035},{n:16,w:.15,y:.34,rx:.56,ry:.03}]};
+  var maxPorAnillo=[28,32,36];
+  maxPorAnillo.forEach(function(n,k){for(var i=0;i<n;i++){
+    var d=el('div','mosaico');var img=el('img');var f=fuentes[(i+k)%4];
+    img.src='./escenas-ecosistema/'+f+'.webp';img.alt='';img.decoding='async';img.style.objectPosition=encuadres[(i*3+k)%encuadres.length];
+    d.appendChild(img);d.dataset.empresa=f;mundo.appendChild(d);mosaico.push({nodo:d,anillo:k,i:i});
+  }});
   function crearRuta(a,b,especial){
     var color='var(--'+escenas[a].empresa+')';
     var p=document.createElementNS(ns,'path');p.setAttribute('class','ruta-vinculo'+(especial?' ruta-organizacion':''));p.style.setProperty('--acento',color);svg.appendChild(p);
@@ -80,7 +90,7 @@
     visibles=nodos.filter(function(p){return lista.indexOf(p.datos.id)>=0;}).sort(function(x,y){return lista.indexOf(x.datos.id)-lista.indexOf(y.datos.id);});
     nodos.forEach(function(p){
       var ver=visibles.indexOf(p);p.pos=ver;p.nodo.style.display=ver<0?'none':'';
-      var w=movil?Math.min(142,ancho*.35):Math.min(190,Math.max(156,ancho*.135));
+      var w=movil?Math.min(142,ancho*.35):Math.min(168,Math.max(142,ancho*.115));
       p.nodo.style.setProperty('--w',w+'px');p.nodo.style.setProperty('--h',(w*(movil?.9:.72))+'px');
     });dibujar();
   }
@@ -92,15 +102,25 @@
       var profundidad=(Math.cos(a)+1)/2;
       var escala=.8+profundidad*.2;
       var w=parseFloat(p.nodo.style.getPropertyValue('--w'));
-      var radio=movil?ancho/2-w*.16:Math.min(ancho*.42,ancho/2-w*.54-10);
+      var radio=movil?ancho/2-w*.16:ancho*.34;
       var x=ancho*.5+Math.sin(a)*radio;
-      var y=alto*(retrato?.66:.7)+Math.cos(a)*alto*(movil?.19:.2);
+      var y=alto*(retrato?.7:.73)+Math.cos(a)*alto*(movil?.15:.135);
       var rot=Math.sin(a)*38;
       // Las ventanas lejanas pasan detrás de la persona; las cercanas, delante.
       var z=profundidad>.5?110+Math.round(profundidad*30):20+Math.round(profundidad*60);
       p.x=x;p.y=y;
       p.nodo.style.transform='translate3d('+x.toFixed(2)+'px,'+y.toFixed(2)+'px,0) perspective(1100px) rotateY('+rot.toFixed(2)+'deg) scale('+escala.toFixed(3)+')';
       p.nodo.style.zIndex=String(z);
+    });
+    var fase=reloj*Math.PI*2/128000, conf=ANILLOS[movil?'movil':'pc'];
+    mosaico.forEach(function(m){
+      var c=conf[m.anillo];if(m.i>=c.n){m.nodo.style.display='none';return;}m.nodo.style.display='';
+      var a=(m.i+(m.anillo%2?.5:0))*Math.PI*2/c.n+fase, prof=(Math.cos(a)+1)/2;
+      var w=ancho*c.w, x=ancho*.5+Math.sin(a)*ancho*c.rx, y=alto*c.y+Math.cos(a)*alto*c.ry;
+      m.nodo.style.width=w+'px';m.nodo.style.height=(w*.62)+'px';
+      m.nodo.style.transform='translate3d('+(x-w/2).toFixed(1)+'px,'+(y-w*.31).toFixed(1)+'px,0) perspective(900px) rotateY('+(Math.sin(a)*38).toFixed(1)+'deg) scale('+(.75+prof*.25).toFixed(3)+')';
+      m.nodo.style.opacity=(.35+prof*.5).toFixed(2);
+      m.nodo.style.zIndex=String(1+Math.round(prof*15));
     });
     rutas.forEach(function(r){
       var a=nodos[r.a],b=nodos[r.b],cx=(a.x+b.x)/2,cy=(a.y+b.y)/2-Math.min(85,alto*.07);

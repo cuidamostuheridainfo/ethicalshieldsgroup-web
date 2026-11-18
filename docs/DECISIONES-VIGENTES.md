@@ -95,7 +95,7 @@ Lo que está aquí ya se decidió. No se reabre salvo que Jenny lo pida o aparez
 - **Sin CMS, backend, Supabase, bases de datos ni servicios externos** sin una justificación concreta y la aprobación de Jenny.
 - **SEO técnico desde el inicio.** El entorno de prueba no se indexa.
 - **Publicación:** primero un entorno de prueba protegido. La producción y el dominio requieren aprobación expresa.
-- **Repositorio (D-08, 18 nov):** `ethicalshieldsgroup-web`, **privado**, en la cuenta de GitHub **cuidamostuheridainfo** (la misma de la Cumbre), rama `main`. Dirección: https://github.com/cuidamostuheridainfo/ethicalshieldsgroup-web. Carpeta local: `C:\Users\Jenny Lopez\Documents\GitHub\ethicalshieldsgroup-web`.
+- **Repositorio público con GitHub Pages (18 nov, noche, Jenny; reemplaza "privado"):** el comité revisa la maqueta con un enlace de GitHub Pages que se actualiza con cada commit, igual que en cumbre-web. Enlace: https://cuidamostuheridainfo.github.io/ethicalshieldsgroup-web/ (la raíz lleva a `diseno/maqueta/`). Las páginas llevan `noindex`. En el repositorio no van claves ni datos sensibles. Antes: `ethicalshieldsgroup-web`, ~~privado~~, en la cuenta de GitHub **cuidamostuheridainfo** (la misma de la Cumbre), rama `main`. Dirección: https://github.com/cuidamostuheridainfo/ethicalshieldsgroup-web. Carpeta local: `C:\Users\Jenny Lopez\Documents\GitHub\ethicalshieldsgroup-web`.
 - **Commits:** los hace Jenny con GitHub Desktop.
 - **Etapas:** A → B → C → D → E. Cada una necesita autorización.
 

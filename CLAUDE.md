@@ -1,6 +1,6 @@
 # Ethical Shields Group · Página web corporativa
 
-Repositorio privado `cuidamostuheridainfo/ethicalshieldsgroup-web` de la página corporativa de la matriz del grupo, que se publicará en `https://ethicalshieldsgroup.com`. Es la puerta de entrada al ecosistema y no funciona como catálogo: presenta al grupo y lleva a los visitantes a las webs independientes de sus cuatro empresas (Medical Shields, Cuidamos tu Herida, Ethical Shields AI y Cumbre CHP).
+Repositorio público `cuidamostuheridainfo/ethicalshieldsgroup-web` (con GitHub Pages para la maqueta; sin claves ni datos sensibles) de la página corporativa de la matriz del grupo, que se publicará en `https://ethicalshieldsgroup.com`. Es la puerta de entrada al ecosistema y no funciona como catálogo: presenta al grupo y lleva a los visitantes a las webs independientes de sus cuatro empresas (Medical Shields, Cuidamos tu Herida, Ethical Shields AI y Cumbre CHP).
 
 Es un proyecto **independiente**. Por eso no se reutilizan ni se modifican repositorios, configuraciones, bases de datos, dominios ni archivos de la Cumbre, CTH, Medical Shields, Ethical Shields AI, GesPro ni IRIS.
 
@@ -44,6 +44,7 @@ Después de leer, decir en dos o tres líneas en qué punto estamos y cuál es e
 | --- | --- |
 | `CLAUDE.md` | Este archivo. |
 | `README.md` | Presentación breve del repositorio. |
+| `index.html`, `.nojekyll` | Raíz de GitHub Pages: llevan a `diseno/maqueta/` para el comité. |
 | `docs/BRIEF.md` | Brief original (18 nov 2026). No se edita. |
 | `docs/ESTADO.md` | Etapa actual y registro fechado de lo hecho. |
 | `docs/PENDIENTES.md` | Decisiones y recursos pendientes, y el siguiente paso. |
