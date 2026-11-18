@@ -1,6 +1,68 @@
 # Estado del proyecto
 
-Última actualización: 18 de noviembre de 2026.
+Última actualización: 18 de noviembre de 2026, noche (órbita uniforme con 8 y 6 ventanas; sin publicar ni hacer commits).
+
+## 18 nov 2026, noche: paso uniforme y sincronizado (pedido de Jenny)
+
+Las ventanas se amontonaban abajo, al frente, porque el reparto corregido las hacía ir más lento al pasar por delante y por detrás. Se volvió a la separación exacta: todas a la misma distancia y a la misma velocidad. Para que no se tapen, ahora hay **8 ventanas en PC y tableta** (dos por empresa: las cuatro de empresa, Unidad B2B, Medicina en desastres, Nuevas alianzas e IRIS) y **6 en teléfono** (las cuatro de empresa, Unidad B2B e IRIS), en orden alternado por empresa. El cálculo de una vuelta completa da 0 % de superposición entre ventanas en 1440, 1280, 1024, 768, 390 y 360 px, y Chrome no muestra errores. Las otras 8 escenas siguen en el código, sin mostrarse.
+
+## 18 nov 2026, noche: corrección del hero (revisión visual de Claude)
+
+Revisión en Chrome a 1440, 1280, 1024, 768, 390 y 360 px, con la animación en marcha y con movimiento reducido, antes y después de los cambios: sin errores de consola y sin desborde horizontal. Se mantiene la órbita única. Correcciones:
+- **Teléfono (hasta 820 px):** menos ventanas y más grandes (reemplazado después: ver la entrada "paso uniforme y sincronizado").
+- **Legibilidad:** cada ventana muestra solo la empresa, un título corto y el estado ("En desarrollo" o "En apertura"). Se quitaron las descripciones y los mini dibujos. Texto de 12 px como mínimo (título de 15 px en PC y de 13 px en teléfono); las ventanas del fondo se ven al 80 % por la distancia.
+- **Extremos de la órbita:** la rotación lateral máxima bajó de 52° a 38°. El reparto acelerado en los lados se retiró después, porque amontonaba las ventanas al frente.
+- **Tableta vertical:** persona más grande y órbita más arriba, para no dejar un hueco bajo el botón.
+- **Peso:** las escenas se muestran en WebP de 640 px (35 a 46 KB cada una, unos 160 KB en total, antes 1,2 MB). Los JPG originales quedan en `escenas-ecosistema/` como archivos maestros.
+- **Pendiente:** prueba en el iPhone de Jenny.
+
+## 18 nov 2026: órbita única y ordenada
+
+Jenny pidió ordenar el movimiento alrededor de la persona. Las 16 ventanas comparten una sola órbita elíptica, separación angular uniforme, sentido y velocidad comunes. Se eliminan las órbitas contrapuestas, alturas oscilantes, inclinación lateral y desplazamiento por puntero; se ocultan las líneas de conexión y se detienen los movimientos internos para reducir ruido. Se mantienen imágenes, nombres y contenidos, intercalados por empresa. Persona y mensaje conservados.
+
+
+## 18 nov 2026: todas las pantallas en órbita
+
+Se retiraron las cuatro ventanas grandes de posiciones fijas. Sus imágenes y nombres ahora forman parte de las 16 pantallas orbitales, todas de tamaño compacto y con dos bandas de movimiento. No se borraron las imágenes: se reutilizan dentro de las pantallas. Persona, mensaje y demás secciones conservados.
+
+
+## 18 nov 2026: hero narrativo de las cuatro empresas
+
+Jenny autorizó aplicar el concepto revisado: cuatro escenas protagonistas y doce ventanas de actividades (16 en total), con movimiento creativo y conexiones. Se conservan la persona, el mensaje y las demás secciones. Nuevos archivos de la maqueta: `hero-ecosistema.css`, `hero-ecosistema.js` y cuatro imágenes originales en `escenas-ecosistema/`. Las ventanas pequeñas incorporan flujos, agenda, redes, capas y estructuras en movimiento. Un pulso vincula explícitamente CTH con Cumbre. B2B se presenta en apertura; AI e IRIS, en desarrollo. Sin publicación ni intervención de otros proyectos. Imágenes generadas como ilustraciones conceptuales: no son fotografías de personal, productos o eventos reales. Las ilustraciones previas se conservan.
+
+
+## 18 nov 2026: mejora autorizada del hero de la maqueta
+
+Jenny autorizó mejorar solo el hero local, conservar la persona y el mensaje y mantener más de diez pantallas. Se implementaron 16 ventanas en tres distancias, dos caras ilustradas por ventana, orden explícito delante/detrás de la persona, variaciones de escala/altura/contraste, luz ambiental y diez escenas vectoriales originales en `diseno/maqueta/escenas/`. Se conservan los archivos originales de la persona y de las ilustraciones anteriores. Animación sin dependencias; pausa manual, fuera de pantalla, pestaña oculta y preferencia de movimiento reducido. Sin publicación, commits ni cambios en otros proyectos. Validación lógica completada; revisión visual del navegador y teléfono real pendiente. Esta entrada reemplaza el comportamiento previo del reverso transparente.
+
+
+
+**18 nov, tarde: pantallas orientadas hacia la persona** (observación de Jenny). La cara ilustrada de las pantallas mira al centro del anillo, es decir, a la persona. Las pantallas más cercanas a la cámara muestran su reverso como un vidrio casi transparente. Probado en Chrome a 1440 y 390 px.
+
+**18 nov, tarde: pantallas con ilustraciones propias** (decisión de Jenny). Las fotos reales no van en las pantallas: rompían la unidad con el resto de la página. Las reemplazan 10 ilustraciones de un solo estilo, líneas turquesa y azul sobre marino, sin texto, generadas con `herramientas/generar_pantallas.py` en `diseno/hero/pantallas/`:
+- cuidado de heridas;
+- apósitos y productos;
+- Cumbre internacional;
+- charlas y educación;
+- investigación;
+- tecnología e IA;
+- atención a domicilio;
+- gestión;
+- formación;
+- salud.
+
+Las copias de fotos que se habían traído pasaron a `_borrar/`, que está excluida en `.gitignore`; Jenny la borra a mano. Probado en Chrome a 1440 y 390 px, sin errores.
+
+**18 nov, tarde: la maqueta pasa al repositorio** (pedido de Jenny: ver cómo va quedando de verdad). La maqueta está en `diseno/maqueta/index.html` y se abre en el navegador directo desde la carpeta.
+- Jenny eligió la opción 3 de las imágenes de Canva, con las pantallas girando. Por eso el hero tiene:
+  - de fondo, una foto realista de la persona de espaldas, sin pantallas (`diseno/hero/fondo-persona.png`, 1680×944, descargada de Canva por Jenny);
+  - encima, dos anillos de pantallas en 3D con las nueve áreas, que giran;
+  - un recorte de la persona (`diseno/hero/persona-recorte.png`), para que las pantallas de atrás pasen detrás de ella.
+- Si falta la foto, la maqueta usa un fondo de respaldo.
+- Recorte hecho con rembg (modelo isnet-general-use): `persona-recorte.png`, 206 KB, mismo tamaño que el fondo. Probado en Chrome a 1440 px y a 390 px con la foto real y sin errores: las pantallas pasan por detrás y por delante de la persona.
+- El lienzo de diseño queda descartado: se trabaja en el repositorio.
+
+**18 nov, tarde: propuesta de diseño de la homepage (reemplazada por la maqueta del repositorio).** Es un lienzo de diseño (https://claude.ai/artifact/PHntwTBAc38tKZ7TC4nMTh) con la versión de escritorio y la de teléfono. Incluye el hero con dos anillos de pantallas que giran en 3D, la silueta y el botón de pausa, y las cinco secciones con la alternancia propuesta en la D-11. Usa el logo aprobado; los datos que faltan van entre corchetes. Es solo una maqueta: no es código del sitio. Además quedaron decididas la D-06 y la D-07: GesPro e IRIS se presentan en ethicalshields.ai, y el Vademécum de Péptidos se muestra solo en "Descubre nuestra innovación".
 
 **18 nov, tarde: repositorio en GitHub.** Publicado como privado en https://github.com/cuidamostuheridainfo/ethicalshieldsgroup-web, rama `main` (D-08). El primer commit (`b6bba62`) incluye la documentación, el logo y el generador. Se verificó que sin sesión GitHub responde 404, es decir, que el repositorio es privado.
 

@@ -51,6 +51,8 @@ Después de leer, decir en dos o tres líneas en qué punto estamos y cuál es e
 | `docs/CONTENIDOS.md` | Textos aprobados y textos por confirmar, sección por sección. |
 | `docs/ESTRUCTURA.md` | Análisis de la Etapa A: arquitectura, componentes, hero, formulario, SEO, seguridad, riesgos y plan. |
 | `docs/PRUEBAS.md` | Plan de pruebas por etapa, resultados, incidencias y licencias de los recursos. |
+| `diseno/maqueta/index.html` | Maqueta de diseño de la homepage. Se abre en el navegador directo desde la carpeta. No es el sitio final. |
+| `diseno/hero/` | Foto de fondo del hero y recorte de la persona. |
 | `diseno/logo/` | Logo del grupo: propuestas, versiones aprobadas y `LEEME.md`. |
 | `herramientas/generar_logo.py` | Genera los SVG del logo. Los ajustes se hacen aquí, no editando los SVG a mano. |
 

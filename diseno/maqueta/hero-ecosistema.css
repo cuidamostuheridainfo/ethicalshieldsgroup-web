@@ -1,0 +1,129 @@
+/* Escenas originales del ecosistema. Solo afecta al hero de la maqueta. */
+.hero{min-height:max(100svh,900px)}
+.hero-fondo{background:radial-gradient(ellipse at 50% 77%,#123c57,#080e2b 57%,#050820)}
+.hero-velo{background:linear-gradient(180deg,#070b26e8,rgba(7,11,38,.68) 27%,transparent 44%,transparent 91%,#070b26c9)}
+.hero-texto{pointer-events:none}
+.hero-texto .boton{pointer-events:auto}
+.escena{overflow:hidden}
+.mundo{--cth:#65f2d7;--cumbre:#b9a0ff;--medical:#75cbff;--ai:#ffc58b}
+.rutas-ecosistema{position:absolute;inset:0;width:100%;height:100%;z-index:10;overflow:visible}
+.ruta-vinculo{fill:none;stroke:var(--acento);stroke-width:1;opacity:.22}
+.ruta-organizacion{stroke-width:1.5;stroke-dasharray:5 9;opacity:.34}
+.ruta-pulso{fill:var(--acento);filter:drop-shadow(0 0 4px var(--acento));opacity:.85}
+.ventana{position:absolute;left:0;top:0;width:var(--w);height:var(--h);margin-left:calc(var(--w)/-2);margin-top:calc(var(--h)/-2);will-change:transform;transform-style:preserve-3d}
+.ventana[data-empresa="cth"]{--acento:var(--cth)}
+.ventana[data-empresa="cumbre"]{--acento:var(--cumbre)}
+.ventana[data-empresa="medical"]{--acento:var(--medical)}
+.ventana[data-empresa="ai"]{--acento:var(--ai)}
+.ventana .cara{border:1px solid color-mix(in srgb,var(--acento) 52%,#1a2e4c);border-radius:13px;background:#071329;box-shadow:0 22px 55px #0006,0 0 26px color-mix(in srgb,var(--acento) 9%,transparent)}
+.ventana .cara::after{box-shadow:inset 0 1px #ffffff24;background:linear-gradient(140deg,#ffffff0e,transparent 42%)}
+.ventana .cara.reverso img{opacity:.85}
+.escena-arte{position:absolute;inset:0;overflow:hidden;background:#081b31}
+.escena-arte img{height:100%;width:100%;object-fit:cover;object-position:var(--encuadre,50% 50%);animation:respirar-escena 19s ease-in-out infinite alternate;animation-delay:var(--desfase,0s);transform:scale(1.07)}
+.escena-arte::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#06132c12,transparent 42%,#06132cbb 78%,#06132c 100%)}
+.ventana-cabecera{position:absolute;top:11px;left:12px;right:12px;display:flex;align-items:center;justify-content:space-between;gap:5px;color:#fff;text-shadow:0 2px 5px #000;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.ventana-indice{display:inline-flex;align-items:center;gap:5px}
+.ventana-indice::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--acento);box-shadow:0 0 9px var(--acento)}
+.ventana-estado{font-size:8px;letter-spacing:.02em;background:#06132cd9;padding:4px 6px;border:1px solid #ffffff26;border-radius:20px}
+.ventana-texto{position:absolute;left:14px;right:14px;bottom:13px;color:#fff}
+.ventana-texto strong{display:block;font-size:17px;line-height:1.15;letter-spacing:-.025em;text-shadow:0 2px 8px #030818}
+.ventana-texto p{font-size:10px;line-height:1.45;margin:5px 0 0;color:#deebf3;max-width:95%}
+
+.satelite .cara{border-radius:9px}
+.satelite .escena-arte{opacity:.78}
+.satelite .escena-arte::after{background:linear-gradient(180deg,#06132c88,#06132c25 38%,#06132cdd 80%,#06132c)}
+.satelite .ventana-cabecera{top:7px;left:8px;right:8px;font-size:7px;letter-spacing:.04em}
+.satelite .ventana-texto{left:9px;right:8px;bottom:8px}
+.satelite .ventana-texto strong{font-size:11px;line-height:1.2;letter-spacing:-.01em}
+.satelite .ventana-texto p{font-size:8px;margin-top:3px;line-height:1.25;color:#cbdfe9}
+.satelite .ventana-estado{font-size:6px;padding:2px 4px}
+.mini-escena{position:absolute;inset:21px 9px 39px;display:flex;align-items:center;justify-content:center;gap:5px}
+.mini-escena span{border:1px solid color-mix(in srgb,var(--acento) 35%,transparent);background:#06132cdd;color:#f4ffff;border-radius:5px;box-shadow:0 3px 12px #0003}
+.mini-flujo span{height:25px;width:30px;display:flex;align-items:center;justify-content:center;font-size:7px;font-weight:600;animation:activar-nodo 4.8s ease-in-out infinite;animation-delay:calc(var(--n)*.65s)}
+.mini-flujo b{color:var(--acento);font-size:10px;font-weight:400}
+.mini-red svg,.mini-celula svg,.mini-piel svg,.mini-mapa svg{height:100%;width:100%;overflow:visible}
+.mini-escena svg{fill:none;stroke:var(--acento);stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5;filter:drop-shadow(0 0 3px #00142b)}
+.mini-escena svg .nodo{fill:var(--acento);stroke:none;animation:activar-nodo 4s ease-in-out infinite;animation-delay:var(--desfase,0s)}
+.mini-piel svg .lamina{fill:color-mix(in srgb,var(--acento) 25%,#06132c);animation:separar-capas 6s ease-in-out infinite alternate;transform-origin:50% 50%;animation-delay:var(--desfase,0s)}
+.mini-celula svg .orbital{transform-origin:80px 28px;animation:orbital-celula 16s linear infinite}
+.mini-agenda{gap:4px;align-items:stretch;padding:0 8px}
+.mini-agenda span{width:25%;display:flex;flex-direction:column;justify-content:center;padding:5px;gap:4px}
+.mini-agenda i{height:4px;border-radius:2px;background:var(--acento);opacity:.7;animation:activar-nodo 4s ease-in-out infinite;animation-delay:calc(var(--n)*.7s)}
+.mini-agenda i:nth-child(2){width:60%;opacity:.4}
+.hero[data-detenido="true"] .ventana *{animation-play-state:paused!important}
+.hero .hero-resumen{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+@keyframes respirar-escena{from{transform:scale(1.07) translateX(-.8%)}to{transform:scale(1.16) translateX(.8%)}}
+@keyframes lectura-escena{0%,100%{transform:translateY(-25px);opacity:0}20%,70%{opacity:.45}80%{transform:translateY(45px);opacity:0}}
+@keyframes activar-nodo{0%,100%{opacity:.45}40%,60%{opacity:1}}
+@keyframes separar-capas{from{transform:translateY(0)}to{transform:translateY(-5px)}}
+@keyframes orbital-celula{to{transform:rotate(360deg)}}
+@media(max-width:820px){
+ .hero{min-height:max(100svh,900px)}
+ .hero .hero-texto{padding-top:115px}
+ .hero .hero-texto h1{font-size:clamp(29px,5.1vw,42px)}
+ .hero .hero-texto .boton{font-size:14px;min-height:48px;padding:0 21px;margin-top:23px}
+ .ventana-texto{left:9px;right:8px;bottom:9px}
+ .ventana-texto strong{font-size:12px}
+ .ventana-texto p{font-size:8px;line-height:1.35}
+ .ventana-cabecera{top:8px;left:8px;right:8px;font-size:7px;letter-spacing:.02em}
+ .ventana-estado{font-size:6px;padding:3px 4px}
+ .satelite .ventana-cabecera{font-size:6px}
+ .satelite .ventana-texto strong{font-size:9px}
+ .satelite .ventana-texto p{font-size:7px}
+ .mini-escena{inset:21px 6px 35px;gap:2px}
+ .mini-flujo span{font-size:5px;width:23px;height:20px}
+ .mini-flujo b{font-size:8px}
+}
+@media(prefers-reduced-motion:reduce){.hero .ventana *{animation:none!important}.ventana{will-change:auto}}
+
+/* Todas las imágenes forman parte de las 16 ventanas orbitales. */
+.ventana .ventana-cabecera{font-size:9px;left:8px;right:8px;top:7px;letter-spacing:0;text-transform:none;flex-wrap:wrap;align-items:flex-start}
+.ventana .ventana-indice{padding:3px 5px;border-radius:4px;background:#051028d9;max-width:100%;line-height:1.15}
+.ventana .ventana-estado{font-size:6px;padding:2px 4px}
+.imagen-empresa .escena-arte{opacity:1}
+.imagen-empresa .escena-arte::after{background:linear-gradient(180deg,#06132c22,transparent 40%,#06132cdd 90%)}
+.imagen-empresa .ventana-texto strong{font-size:12px}
+.imagen-empresa .ventana-texto p{display:none}
+.ventana .mini-escena{inset:30px 8px 42px}
+@media(max-width:820px){
+ .ventana .ventana-cabecera{font-size:8px;gap:2px;left:5px;right:5px;top:5px}
+ .ventana .ventana-texto{left:7px;right:6px;bottom:7px}
+ .ventana .ventana-texto strong{font-size:9px;line-height:1.2}
+ .ventana .ventana-texto p{display:none}
+ .ventana .ventana-estado{font-size:6px}
+ .ventana .mini-escena{inset:29px 6px 29px}
+}
+
+/* Órbita única y ordenada: las ventanas comparten ritmo y proporciones. */
+.rutas-ecosistema{display:none}
+.ventana .escena-arte img{animation:none;transform:none}
+.ventana .mini-escena{opacity:.6}
+.ventana .mini-escena *{animation:none!important}
+.ventana .ventana-cabecera{font-size:8px}
+@media(max-width:820px){.ventana .ventana-cabecera{font-size:7px}.ventana .ventana-texto strong{font-size:8px}}
+
+/* ===== Corrección de legibilidad y orden (18 nov, noche). Reemplaza los tamaños anteriores. =====
+   Cada ventana muestra solo: empresa (arriba), título corto (abajo) y, si aplica, el estado.
+   Tamaños mínimos de 12 px en la ventana; las del fondo se ven al 80 % por la distancia. */
+.ventana .mini-escena,.ventana .ventana-texto p{display:none}
+.ventana .ventana-cabecera{top:9px;left:9px;right:9px;font-size:12px;letter-spacing:0;text-transform:none;white-space:nowrap}
+.ventana .ventana-indice{max-width:100%;overflow:hidden;text-overflow:ellipsis}
+.ventana .ventana-indice{padding:4px 7px;border-radius:6px;background:#051028e0;font-weight:700}
+.ventana .ventana-texto{left:11px;right:10px;bottom:10px}
+.ventana .ventana-texto strong,.satelite .ventana-texto strong,.imagen-empresa .ventana-texto strong{font-size:15px;line-height:1.2;letter-spacing:-.01em}
+.ventana .ventana-estado,.satelite .ventana-estado{display:inline-block;margin-top:6px;font-size:12px;font-weight:600;line-height:1;padding:4px 8px;border-radius:20px;background:#06132ce6;border:1px solid color-mix(in srgb,var(--acento) 55%,transparent);color:#fff}
+.satelite .escena-arte{opacity:.9}
+.satelite .escena-arte::after,.imagen-empresa .escena-arte::after{background:linear-gradient(180deg,#06132c99 0%,#06132c10 30%,#06132c20 50%,#06132cee 88%)}
+/* Tableta vertical: persona más grande para que no quede un hueco bajo el botón. */
+@media (min-width:821px) and (max-aspect-ratio:1/1),(min-width:600px) and (max-width:820px) and (min-height:900px){
+  .hero{--alto-foto:84%}
+}
+@media(max-width:820px){
+  .ventana .ventana-cabecera{top:7px;left:6px;right:6px;font-size:12px;white-space:nowrap}
+  .ventana .ventana-indice{max-width:100%;overflow:hidden;text-overflow:ellipsis}
+  .ventana .ventana-indice{padding:3px 6px}
+  .ventana .ventana-texto{left:8px;right:7px;bottom:8px}
+  .ventana .ventana-texto strong,.satelite .ventana-texto strong,.imagen-empresa .ventana-texto strong{font-size:13px}
+  .ventana .ventana-estado,.satelite .ventana-estado{font-size:12px;margin-top:4px;padding:3px 7px}
+}
+@media(max-width:600px){.hero .pausa{z-index:200}}

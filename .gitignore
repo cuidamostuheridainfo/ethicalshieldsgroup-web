@@ -20,3 +20,6 @@ test-results/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Archivos descartados que Jenny borra a mano
+_borrar/

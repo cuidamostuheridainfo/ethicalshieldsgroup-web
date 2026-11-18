@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Maqueta · Ethical Shields Group</title>
+<link rel="icon" href="../logo/favicon.svg" type="image/svg+xml">
+<!-- Pantallas del hero: escenas narrativas propias en ./escenas-ecosistema/ y hero-ecosistema.js.
+     MAQUETA DE DISEÑO (no es el sitio final). Se abre directo desde la carpeta.
+     Fondo del hero: ../hero/fondo-persona.png (imagen generada en Canva, opción 3 sin pantallas).
+     Recorte de la persona: ../hero/persona-recorte.png (mismo tamaño que el fondo, fondo transparente).
+     Si falta alguno, la maqueta usa un fondo de respaldo. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<style>
+:root{
+  --marino:#141B4D; --noche:#070B26; --turquesa:#19E6DF; --azul:#0E8FCB;
+  --gris:#F4F6FA; --texto2:#4A5280; --claro-osc:#C9D2F0;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--marino);background:#fff;-webkit-font-smoothing:antialiased}
+a{color:var(--azul)}
+:focus-visible{outline:3px solid var(--turquesa);outline-offset:3px}
+.contenedor{max-width:1220px;margin:0 auto;padding:0 24px}
+.etiqueta{margin:0 0 16px;font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--azul)}
+h2{margin:0;font-size:clamp(32px,4.2vw,52px);line-height:1.08;font-weight:800;letter-spacing:-.02em}
+.boton{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 28px;border-radius:999px;font-size:16px;font-weight:700;text-decoration:none;border:0;cursor:pointer}
+.boton svg{width:18px;height:18px}
+
+/* ---------- Encabezado ---------- */
+.encabezado{position:absolute;inset:0 0 auto 0;z-index:30}
+.encabezado .contenedor{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:22px;padding-bottom:22px}
+.encabezado img{height:46px;width:auto;display:block}
+.menu{display:flex;gap:30px;align-items:center}
+.menu a{color:var(--claro-osc);text-decoration:none;font-size:15px;font-weight:500}
+.menu a:hover{color:#fff}
+.menu a.cta{color:var(--noche);background:var(--turquesa);padding:11px 20px;border-radius:999px;font-weight:700}
+.boton-menu{display:none;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid rgba(201,210,240,.5);background:rgba(7,11,38,.4);color:#fff;font:600 15px 'Plus Jakarta Sans',sans-serif;cursor:pointer}
+.menu-movil{display:none;margin:0 16px;background:var(--marino);border:1px solid rgba(25,230,223,.35);border-radius:18px;padding:8px;flex-direction:column}
+.menu-movil a{color:#fff;text-decoration:none;padding:14px 16px;font-weight:600}
+.menu-movil.abierto{display:flex}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;min-height:max(100svh,800px);background:var(--noche);color:#fff;overflow:hidden;isolation:isolate}
+.hero-fondo{position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse at 50% 76%,#123e60 0%,#080e2e 56%,#050820 100%)}
+.foto{position:absolute;left:50%;bottom:0;height:var(--alto-foto,80%);width:auto;max-width:none;transform:translateX(-50%);-webkit-mask-image:radial-gradient(48% 80% at 50% 62%,#000 60%,transparent 100%);mask-image:radial-gradient(48% 80% at 50% 62%,#000 60%,transparent 100%)}
+.hero-fondo::after{content:"";position:absolute;left:12%;right:12%;bottom:3%;height:20%;border-radius:50%;background:radial-gradient(ellipse,rgba(25,230,223,.16),transparent 68%);transform:scaleY(.35);pointer-events:none}
+.hero-velo{position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(180deg,rgba(7,11,38,.88),rgba(7,11,38,.68) 29%,transparent 49%,transparent 88%,rgba(7,11,38,.7))}
+.escena{position:absolute;inset:0;z-index:1;pointer-events:none}
+.mundo{position:absolute;inset:0}
+.capa-persona{position:absolute;inset:0;z-index:100;pointer-events:none}
+.pantalla{position:absolute;left:50%;top:var(--orbita-y,68%);width:var(--w);height:var(--h);margin-left:calc(var(--w)/-2);margin-top:calc(var(--h)/-2);transform-style:preserve-3d;will-change:transform,opacity}
+.cara{position:absolute;inset:0;overflow:hidden;border-radius:10px;border:1px solid rgba(113,255,245,.65);background:#07152e;backface-visibility:hidden;-webkit-backface-visibility:hidden;box-shadow:0 12px 35px #02061980,0 0 16px #19e6df24}
+.cara.frente{transform:translateZ(1px)}
+.cara.reverso{transform:rotateY(180deg) translateZ(1px);border-color:rgba(103,204,243,.6)}
+.cara img{display:block;width:100%;height:100%;object-fit:cover}
+.cara.reverso img{opacity:.78}
+.cara::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,#d8ffff24,transparent 32%,transparent 65%,#19e6df12);box-shadow:inset 0 0 18px #19e6df16;pointer-events:none}
+.cara.reverso::after{background:repeating-linear-gradient(0deg,transparent 0 5px,#4cdedb0b 5px 6px),linear-gradient(135deg,#80edff12,transparent 55%)}
+.hero-texto{position:relative;z-index:3;padding-top:clamp(110px,14vh,150px);text-align:center}
+.hero-texto h1 .linea-h{white-space:nowrap}
+.hero-texto .descriptor{margin:0 0 18px;font-size:14px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--turquesa)}
+.hero-texto h1{margin:0 auto;font-size:clamp(34px,5.2vw,70px);line-height:1.03;font-weight:800;letter-spacing:-.02em;text-shadow:0 4px 30px rgba(7,11,38,.6)}
+.hero-texto h1 span{color:var(--turquesa)}
+.hero-texto .boton{margin-top:28px;background:#fff;color:var(--marino)}
+.pausa{position:absolute;right:24px;bottom:24px;z-index:4;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid rgba(201,210,240,.4);background:rgba(7,11,38,.6);color:var(--claro-osc);font:600 13px 'Plus Jakarta Sans',sans-serif;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.pausa:disabled{cursor:default;opacity:.8}
+
+/* ---------- Secciones ---------- */
+section.bloque{padding:110px 0}
+.dos-columnas{display:flex;flex-wrap:wrap;gap:56px;align-items:flex-start}
+.dos-columnas > *{flex:1 1 420px;min-width:0}
+.texto-grande{margin:0;font-size:19px;line-height:1.65;color:#2B3263}
+.pendiente{padding:16px 18px;border-radius:12px;background:var(--gris);font-size:15px;line-height:1.6;color:var(--texto2)}
+.oscuro{background:var(--marino);color:#fff}
+.oscuro .etiqueta{color:var(--turquesa)}
+.tarjetas{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.tarjeta{background:#fff;color:var(--marino);border-radius:22px;padding:30px 26px 26px;display:flex;flex-direction:column;gap:18px;min-height:340px}
+.tarjeta .logo{height:72px;border-radius:14px;border:1.5px dashed #B8C0DE;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:var(--texto2);text-align:center;padding:0 12px}
+.tarjeta h3{margin:0;font-size:22px;font-weight:800}
+.tarjeta p{margin:0;font-size:15px;line-height:1.6;color:var(--texto2);flex-grow:1}
+.tarjeta a{justify-content:center;background:var(--marino);color:#fff;min-height:48px;font-size:15px}
+.innovacion{background:var(--gris)}
+.destacado{background:#fff;border-radius:24px;padding:36px;box-shadow:0 20px 50px rgba(20,27,77,.10);display:flex;flex-direction:column;gap:16px}
+.destacado h3{margin:0;font-size:26px;font-weight:800}
+.contacto{background:#0A0F33;color:#fff}
+.contacto .etiqueta{color:var(--turquesa)}
+form{background:var(--marino);border:1px solid rgba(25,230,223,.25);border-radius:24px;padding:34px;display:grid;gap:18px}
+form label{font-size:14px;font-weight:600}
+form .campo{display:flex;flex-direction:column;gap:8px}
+input,select,textarea{font:inherit;min-height:48px;border-radius:12px;border:1px solid #3A4380;background:#0A0F33;color:#fff;padding:0 14px}
+textarea{padding:12px 14px;resize:vertical}
+.pie{padding:64px 0 36px;border-top:1px solid #E3E7F2}
+.pie .fila{display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between}
+.pie nav{display:flex;flex-direction:column;gap:12px}
+.pie nav span{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--texto2)}
+.pie nav a{color:var(--marino);text-decoration:none;font-weight:600;font-size:15px}
+.whatsapp{position:fixed;right:22px;bottom:22px;z-index:50;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 28px rgba(7,11,38,.35)}
+.hero .pausa{right:96px}
+
+/* ---------- Teléfono ---------- */
+@media (max-width:1000px){.tarjetas{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:820px){
+  .menu{display:none}.boton-menu{display:inline-flex}
+  .encabezado img{height:38px}
+  .hero-texto .descriptor{font-size:11px;letter-spacing:.17em}
+  .hero-texto h1{font-size:clamp(30px,5.2vw,43px)}
+  .hero .pausa{right:auto;left:16px}
+  .hero{--alto-foto:62%}
+  .hero-texto h1 .linea-h{white-space:normal}
+}
+@media (max-width:560px){.tarjetas{grid-template-columns:minmax(0,1fr)}section.bloque{padding:80px 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pantalla{will-change:auto}}
+</style>
+<link rel="stylesheet" href="./hero-ecosistema.css">
+</head>
+<body>
+
+<header class="encabezado">
+  <div class="contenedor">
+    <a href="#inicio" aria-label="Ethical Shields Group, inicio"><img src="../logo/logo-esg-horizontal-oscuro.svg" alt="Ethical Shields Group"></a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#quienes-somos">Quiénes somos</a>
+      <a href="#empresas">Nuestras empresas</a>
+      <a href="#innovacion">Innovación</a>
+      <a href="#contacto" class="cta">Contacto</a>
+    </nav>
+    <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu-movil">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Menú
+    </button>
+  </div>
+  <nav class="menu-movil" id="menu-movil" aria-label="Principal, teléfono">
+    <a href="#quienes-somos">Quiénes somos</a>
+    <a href="#empresas">Nuestras empresas</a>
+    <a href="#innovacion">Innovación</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="inicio" aria-labelledby="titulo-hero">
+  <div class="hero-fondo"><img class="foto" src="../hero/fondo-persona.png" alt="" onerror="this.remove()"></div>
+  <div class="escena" aria-hidden="true">
+    <div class="mundo" id="mundo">
+      <div class="capa-persona"><img class="foto" src="../hero/persona-recorte.png" alt="" onerror="this.remove()"></div>
+    </div>
+  </div>
+  <div class="hero-velo"></div>
+  <div class="hero-texto contenedor">
+    <p class="descriptor">Salud · Tecnología · Innovación</p>
+    <h1 id="titulo-hero"><span class="linea-h" style="color:#fff">Conectamos capacidades.</span><br><span class="linea-h">Multiplicamos soluciones.</span></h1>
+    <a class="boton" href="#empresas">Conoce nuestras empresas
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
+  </div>
+  <p class="hero-resumen">Nuestro ecosistema: Cuidamos tu Herida ofrece atención especializada y a domicilio, abre una unidad B2B para seguros, empresas y organizaciones, organiza la Cumbre y participa en adiestramientos para farmaceutas. Cumbre CHP es un encuentro multidisciplinario para profesionales de la medicina; el próximo encuentro se enfoca en medicina en desastres y avances tecnológicos en longevidad. Medical Shields crece con nuevas alianzas internacionales para el cuidado de la piel y la innovación farmacéutica. Ethical Shields AI desarrolla aplicaciones completas para gestionar empresas con IA, desde antes de captar clientes hasta cobranza, pagos y bancos, e IRIS para gestionar pacientes y consultorios con IA. Estas aplicaciones están en desarrollo.</p>
+  <button class="pausa" type="button" id="pausa">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path id="icono-pausa" d="M9 5v14M15 5v14"/></svg><span>Pausar animación</span>
+  </button>
+</section>
+
+<section class="bloque" id="quienes-somos" aria-labelledby="titulo-quienes">
+  <div class="contenedor dos-columnas">
+    <div>
+      <p class="etiqueta">Quiénes somos</p>
+      <h2 id="titulo-quienes">Más que empresas.<br>Un ecosistema conectado.</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:22px">
+      <p class="texto-grande">En Ethical Shields Group integramos salud, tecnología e innovación para ofrecer soluciones que conectan personas, profesionales y organizaciones.</p>
+      <p class="texto-grande" style="color:var(--marino);font-weight:700">Cuatro empresas especializadas. Una visión compartida. Más posibilidades.</p>
+      <p class="pendiente">[Trayectoria breve: uno o dos datos verificables de origen y recorrido del grupo]</p>
+      <div><a class="boton" href="#empresas" style="border:2px solid var(--marino);color:var(--marino)">Conoce nuestras empresas</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="bloque oscuro" id="empresas" aria-labelledby="titulo-empresas">
+  <div class="contenedor">
+    <div style="text-align:center;margin-bottom:56px">
+      <p class="etiqueta">Nuestras empresas</p>
+      <h2 id="titulo-empresas">Conoce nuestro ecosistema</h2>
+      <p style="margin:18px auto 0;max-width:620px;font-size:18px;line-height:1.6;color:var(--claro-osc)">Cuatro empresas especializadas. Una visión compartida.</p>
+    </div>
+    <div class="tarjetas" id="tarjetas"></div>
+  </div>
+</section>
+
+<section class="bloque innovacion" id="innovacion" aria-labelledby="titulo-innovacion">
+  <div class="contenedor dos-columnas" style="align-items:center">
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <p class="etiqueta" style="margin:0">Innovación aplicada</p>
+      <h2 id="titulo-innovacion">Innovación que genera soluciones.</h2>
+      <p class="texto-grande" style="color:var(--marino);font-weight:600">La innovación no es solo parte de nuestra visión. Es parte de lo que hacemos.</p>
+      <p class="texto-grande">Desde la inteligencia artificial y la automatización hasta las iniciativas científicas, nuestras empresas transforman conocimiento en soluciones reales.</p>
+    </div>
+    <div class="destacado">
+      <p style="margin:0;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--texto2)">Una iniciativa de Medical Shields</p>
+      <h3>Vademécum de Investigación en Péptidos</h3>
+      <p class="pendiente" style="margin:0">[Descripción breve aprobada: recurso de consulta para investigación]</p>
+      <div><a class="boton" href="https://peptidos.medical-shields.com/" target="_blank" rel="noopener" style="background:var(--marino);color:#fff">Descubre nuestra innovación
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="bloque contacto" id="contacto" aria-labelledby="titulo-contacto">
+  <div class="contenedor dos-columnas">
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <p class="etiqueta" style="margin:0">Contacto</p>
+      <h2 id="titulo-contacto">Conectemos nuevas oportunidades.</h2>
+      <p style="margin:0;font-size:19px;line-height:1.6;color:var(--claro-osc)">¿Buscas información, soluciones o una alianza estratégica? Hablemos.</p>
+    </div>
+    <form aria-label="Formulario de contacto" onsubmit="event.preventDefault();alertaMaqueta()">
+      <div class="campo"><label for="f-nombre">Nombre y apellido</label><input id="f-nombre" autocomplete="name" required></div>
+      <div class="campo"><label for="f-correo">Correo electrónico</label><input id="f-correo" type="email" autocomplete="email" required></div>
+      <div class="campo"><label for="f-empresa">Empresa u organización <span style="font-weight:400;color:var(--claro-osc)">(opcional)</span></label><input id="f-empresa" autocomplete="organization"></div>
+      <div class="campo"><label for="f-motivo">Motivo de contacto</label>
+        <select id="f-motivo" required><option value="">Selecciona una opción</option><option>Información general</option><option>Alianzas estratégicas</option><option>Prensa y medios</option><option>Proveedores</option><option>Otro</option></select></div>
+      <div class="campo"><label for="f-mensaje">Mensaje</label><textarea id="f-mensaje" rows="4" required></textarea></div>
+      <div style="display:flex;gap:12px;align-items:flex-start">
+        <input id="f-privacidad" type="checkbox" required style="width:22px;height:22px;min-height:0;margin:2px 0 0;accent-color:var(--turquesa)">
+        <label for="f-privacidad" style="font-weight:400;color:var(--claro-osc);line-height:1.5">Acepto la <a href="#" style="color:var(--turquesa)">política de privacidad</a>.</label>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between">
+        <button class="boton" type="submit" style="background:var(--turquesa);color:#0A0F33">Solicitar información</button>
+        <span style="font-size:12px;color:var(--claro-osc)">Maqueta: el formulario no envía nada</span>
+      </div>
+      <p id="aviso-form" role="status" style="margin:0;font-size:14px;color:var(--turquesa)"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="fila">
+      <img src="../logo/logo-esg-horizontal-claro.svg" alt="Ethical Shields Group · Salud · Tecnología · Innovación" style="height:54px;width:auto">
+      <nav aria-label="Empresas del grupo" id="pie-empresas"><span>Nuestras empresas</span></nav>
+      <nav aria-label="Institucional"><span>Institucional</span><a href="#">Política de privacidad</a><a href="#contacto">Contacto</a></nav>
+    </div>
+    <p style="margin:44px 0 0;font-size:13px;color:var(--texto2)">© 2026 [Razón social]. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/584122853958?text=Hola%2C%20estoy%20visitando%20la%20p%C3%A1gina%20de%20Ethical%20Shields%20Group%20y%20quisiera%20recibir%20m%C3%A1s%20informaci%C3%B3n" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.4-4.2A8 8 0 1 1 8.5 19z"/><path d="M9.5 9.5c.3 1.8 1.7 3.6 3.6 4.5l1.2-1 1.7.8c-.2 1-1 1.7-2 1.7-3 0-6.2-3.2-6.2-6.2 0-1 .7-1.8 1.7-2l.8 1.7z"/></svg>
+</a>
+
+<script src="./hero-ecosistema.js"></script>
+<script>
+(function(){
+  // Menú del teléfono
+  var bm = document.querySelector('.boton-menu'), mm = document.getElementById('menu-movil');
+  bm.addEventListener('click', function(){ var ab = mm.classList.toggle('abierto'); bm.setAttribute('aria-expanded', ab); });
+  mm.addEventListener('click', function(e){ if (e.target.tagName === 'A') { mm.classList.remove('abierto'); bm.setAttribute('aria-expanded', 'false'); } });
+
+  // Empresas: tarjetas y pie
+  var empresas = [
+    ['Medical Shields','Empresa especializada en soluciones, productos, tecnología y servicios para el sector salud.','https://medicalshields.com/'],
+    ['Cuidamos tu Herida','Atención especializada y soluciones para el cuidado de heridas.','https://cuidamostuherida.com/'],
+    ['Ethical Shields AI','Consultoría, tecnología, inteligencia artificial, automatización y soluciones empresariales.','https://ethicalshields.ai/'],
+    ['Cumbre CHP','Iniciativa de formación, intercambio científico y conexión profesional.','https://cumbrechp.org/']
+  ];
+  var cont = document.getElementById('tarjetas'), pie = document.getElementById('pie-empresas');
+  empresas.forEach(function(e){
+    var art = document.createElement('article'); art.className = 'tarjeta';
+    art.innerHTML = '<div class="logo">[Logo oficial de ' + e[0] + ']</div><h3>' + e[0] + '</h3><p>' + e[1] + '</p>' +
+      '<a class="boton" href="' + e[2] + '" target="_blank" rel="noopener">Visitar sitio web <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>';
+    cont.appendChild(art);
+    var a = document.createElement('a'); a.href = e[2]; a.target = '_blank'; a.rel = 'noopener'; a.textContent = e[0]; pie.appendChild(a);
+  });
+  window.alertaMaqueta = function(){ document.getElementById('aviso-form').textContent = 'Maqueta: aquí aparecerá la confirmación del envío.'; };
+})();
+</script>
+</body>
+</html>

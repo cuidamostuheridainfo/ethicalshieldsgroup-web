@@ -1,5 +1,34 @@
 # Decisiones vigentes
 
+## 18 nov 2026: órbita única y ordenada
+
+Jenny solicita una vuelta ordenada alrededor del hombre. Se adopta una sola elipse con 16 ángulos equidistantes, velocidad común y un solo sentido; se reemplazan las dos bandas contrapuestas y los movimientos independientes. Sin líneas de conexión. Se conservan las 16 escenas y los nombres.
+
+
+## 18 nov 2026: todas las pantallas en órbita
+
+Jenny pidió eliminar las cuatro ventanas grandes fijas e integrar sus imágenes y nombres en las que giran. Se conserva un total de 16 pantallas compactas en movimiento, con los mismos contenidos y estados de apertura/desarrollo. Esta decisión reemplaza la distribución de cuatro protagonistas fijas y doce satélites.
+
+
+## Hero narrativo autorizado por Jenny (18 nov 2026)
+
+- Se reemplaza la representación genérica por 16 escenas: cuatro protagonistas y doce de actividades concretas, con conexiones y movimiento interno. La persona y el mensaje se conservan.
+- CTH: atención especializada y a domicilio; apertura B2B para seguros, empresas y organizaciones; organizadora de la Cumbre y participante en adiestramientos para farmaceutas.
+- Cumbre: encuentro multidisciplinario para profesionales de la medicina; próxima edición enfocada en medicina en desastres y avances tecnológicos en longevidad. Sin fecha inventada.
+- Medical Shields: crecimiento con nuevas alianzas internacionales para cuidado de la piel e innovación farmacéutica; sin atribuir fabricación ni resultados propios.
+- Ethical Shields AI: aplicaciones completas en desarrollo para procesos desde antes de captar clientes hasta cobranza, pagos y bancos. IRIS: gestión de pacientes y consultorios con IA, en desarrollo; sin atribuir decisiones clínicas automatizadas.
+- El pedido actual autoriza representar IRIS dentro del hero como desarrollo; esto reemplaza para esta escena la exclusión anterior de IRIS. No altera la sección Innovación ni autoriza oferta comercial.
+- Se permiten las nuevas ilustraciones conceptuales originales y rótulos de empresa/actividad en las ventanas, para reconocerlas; reemplaza en este hero la restricción anterior a dibujos lineales sin texto. No son registros reales de equipos, pacientes, eventos o alianzas.
+
+
+## Ajuste autorizado del hero local (18 nov 2026)
+
+- Jenny aprobó mayor profundidad, escenas más creativas y corrección de reversos vacíos, conservando persona y mensaje aprobado.
+- Solicitó más de diez pantallas: se implementan 16, con tres distancias y dos caras ilustradas. Se mantienen las 16 en móvil, con dimensiones y órbitas adaptadas.
+- Se conserva el estilo de ilustración propia, sin fotos reales ni texto dentro de las pantallas.
+- Reemplaza en esta maqueta el reverso de vidrio vacío anterior. Sin autorización para publicar ni intervenir otros proyectos.
+
+
 Lo que está aquí ya se decidió. No se reabre salvo que Jenny lo pida o aparezca un motivo nuevo. En ese caso se tacha la línea, se anota la fecha y se escribe la decisión que la reemplaza.
 
 ## Identidad (brief del 18 nov 2026 y decisiones del grupo)
@@ -31,7 +60,10 @@ Lo que está aquí ya se decidió. No se reabre salvo que Jenny lo pida o aparez
   - cada una con logo oficial, nombre, descripción breve y el botón "Visitar sitio web";
   - son el elemento principal de navegación.
 - **Mensajes aprobados:** son los del brief, copiados en `CONTENIDOS.md`. No se sustituyen sin autorización.
-- **Innovación:** solo iniciativas verificadas. GesPro e IRIS pertenecen a Ethical Shields AI. El Vademécum de Investigación en Péptidos es una iniciativa de Medical Shields, no una empresa. No se presentan compuestos de investigación como tratamientos aprobados.
+- **Innovación (D-06 y D-07, Jenny, 18 nov):**
+  - GesPro e IRIS **no se muestran en la sección Innovación**: se presentan dentro de la web de Ethical Shields AI, a la que se llega desde su tarjeta. ~~No se muestran en la página del grupo~~ (ajustado el 18 nov: en el hero, IRIS sí aparece como "En desarrollo"; ver la sección del hero de este archivo).
+  - La sección muestra el título, los dos textos aprobados y una sola iniciativa: el Vademécum de Investigación en Péptidos, con el botón "Descubre nuestra innovación", que lleva a peptidos.medical-shields.com.
+- **Innovación, reglas generales:** solo iniciativas verificadas. GesPro e IRIS pertenecen a Ethical Shields AI. El Vademécum de Investigación en Péptidos es una iniciativa de Medical Shields, no una empresa. No se presentan compuestos de investigación como tratamientos aprobados.
 - **WhatsApp flotante:**
   - número de Medical Shields, +58 412-2853958;
   - enlace `https://wa.me/584122853958`;
@@ -48,6 +80,11 @@ Lo que está aquí ya se decidió. No se reabre salvo que Jenny lo pida o aparez
   - las pantallas representan las nueve áreas del ecosistema, no solo IA;
   - debe transmitir orden y no caos;
   - incluye una versión estática para movimiento reducido.
+- **Órbita del hero (18 nov, noche, Jenny):** una sola órbita, separación y velocidad iguales para todas las ventanas, sin amontonamientos. Son 8 ventanas en PC y tableta y 6 en teléfono, alternadas por empresa. Cada ventana lleva empresa, título corto y estado.
+- **Hero (18 nov, Jenny):**
+  - fondo con la foto realista de la persona de espaldas (opción 3 de Canva, sin pantallas);
+  - encima, pantallas que giran en 3D alrededor de la persona;
+  - las pantallas llevan **ilustraciones propias de un solo estilo, sin fotos reales y sin texto**.
 - **Se evita:** saturación, exceso de efectos, neones agresivos y estética de videojuego.
 - **Referencia (Aperture, de Scrolltide):** solo conceptual. No se copian su código, su diseño exacto, sus imágenes ni sus animaciones.
 

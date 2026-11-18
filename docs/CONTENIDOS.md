@@ -1,5 +1,10 @@
 # Contenidos
 
+## Ampliación aprobada para el hero (Jenny, 18 nov 2026)
+
+Se conserva el h1 aprobado y su CTA. Se autorizan 16 escenas con estos contenidos: CTH (atención especializada y a domicilio, B2B en apertura para seguros/empresas/organizaciones, organización de la Cumbre y adiestramientos para farmaceutas); Cumbre (encuentro multidisciplinario, próxima edición sobre medicina en desastres y avances tecnológicos en longevidad); Medical Shields (nuevas alianzas internacionales, cuidado de la piel e innovación farmacéutica); Ethical Shields AI (aplicaciones completas en desarrollo desde antes de captar clientes hasta cobranza, pagos y bancos, e IRIS para gestión de pacientes y consultorios con IA, en desarrollo). Esta ampliación autoriza mencionar IRIS en una ventana del hero, reemplazando allí su exclusión anterior, sin modificar la sección Innovación.
+
+
 Textos de la página, sección por sección. Cada texto lleva uno de tres estados:
 
 - **APROBADO:** viene del brief. No se cambia sin autorización de Jenny.
@@ -58,12 +63,12 @@ Todas las tarjetas llevan el botón "Visitar sitio web". La descripción de cada
 | Título | Innovación que genera soluciones. | APROBADO |
 | Texto | La innovación no es solo parte de nuestra visión. Es parte de lo que hacemos. | APROBADO |
 | Texto | Desde la inteligencia artificial y la automatización hasta las iniciativas científicas, nuestras empresas transforman conocimiento en soluciones reales. | APROBADO |
-| Botón | Descubre nuestra innovación | APROBADO como texto; el destino está POR CONFIRMAR (D-07) |
+| Botón | Descubre nuestra innovación → peptidos.medical-shields.com | APROBADO (D-07, 18 nov) |
+
+GesPro e IRIS no aparecen en esta página: se presentan en la web de Ethical Shields AI (D-06).
 
 | Iniciativa | Empresa | Descripción | Estado |
 | --- | --- | --- | --- |
-| GesPro | Ethical Shields AI | [Descripción breve aprobada] | POR CONFIRMAR (P-11) |
-| IRIS | Ethical Shields AI | [Descripción y estado: no está lista para comercializar] | POR CONFIRMAR (D-06, P-11) |
 | Vademécum de Investigación en Péptidos | Medical Shields | [Descripción como recurso de investigación, sin presentarlo como tratamiento] · peptidos.medical-shields.com | POR CONFIRMAR (P-11) |
 
 ## 5. Contacto

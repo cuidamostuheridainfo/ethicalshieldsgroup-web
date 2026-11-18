@@ -1,5 +1,20 @@
 # Estructura del proyecto: análisis de la Etapa A
 
+## 18 nov 2026: órbita única y ordenada
+
+Distribución actual del hero: una única órbita elíptica paramétrica con 16 ventanas equidistantes y un periodo de 128 segundos. Una sola fase determina posición, escala por profundidad e inclinación. El orden delante/detrás de la persona se deriva de la misma fase. Sin rutas SVG activas, oscilaciones individuales ni paralaje por puntero. Se conservan pausa global y movimiento reducido.
+
+
+## 18 nov 2026: todas las pantallas en órbita
+
+El hero usa 16 ventanas orbitales compactas en dos bandas de ocho, con radios y tamaños adaptados al ancho. Las cuatro escenas de empresa se integran como ventanas del mismo sistema. Las conexiones siguen sus posiciones; se conservan controles de pausa, movimiento reducido y orden delante/detrás de la persona.
+
+
+## Implementación local del hero revisado (18 nov 2026)
+
+La maqueta conserva el HTML de las demás secciones y usa dos archivos locales sin dependencias: `diseno/maqueta/hero-ecosistema.css` y `hero-ecosistema.js`. Construye 4 ventanas principales con imágenes originales y 12 ventanas de actividades con capas HTML/SVG. Las ventanas principales derivan su movimiento de posiciones estables para dar tiempo de lectura; las complementarias recorren una órbita elíptica con orden delante/detrás de la persona. Trece rutas SVG vinculan empresas y actividades, incluida CTH→Cumbre; sus pulsos comparten el reloj de la animación. Microanimaciones internas con CSS. Pausa global manual, pestaña oculta, fuera de pantalla y movimiento reducido detienen también las capas internas. Se mantienen las 16 ventanas en móvil, con tamaños y distribución adaptados. No se agregan librerías ni servicios. No cambia la arquitectura del futuro sitio ni autoriza publicación.
+
+
 Fecha: 18 de noviembre de 2026. Estado: **propuesta en espera de aprobación.** Ninguna de estas recomendaciones está aprobada hasta que Jenny lo indique. Las decisiones que piden su respuesta están en `PENDIENTES.md`, sección "Decisiones de Jenny".
 
 Este documento cubre los nueve entregables de la Etapa A del brief (sección 11).

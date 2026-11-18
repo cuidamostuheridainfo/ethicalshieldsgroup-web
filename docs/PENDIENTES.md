@@ -1,11 +1,21 @@
 # Pendientes
 
-Última actualización: 18 de noviembre de 2026 (Etapa A entregada y documentación inicial creada).
+Última actualización: 18 de noviembre de 2026, noche.
+
+## Revisión del hero (vigente)
+
+- La revisión visual en Chrome (6 anchos, animación y movimiento reducido) está hecha y corregida: ver ESTADO, "18 nov, noche".
+- **Falta la prueba en el iPhone de Jenny:** una vuelta completa, fluidez, legibilidad de las 6 ventanas del teléfono y el botón de pausa.
+- Ethical Shields AI e IRIS se presentan como "En desarrollo" y la Unidad B2B como "En apertura": no se ofrece disponibilidad comercial.
+- Los cambios son solo en la maqueta: no se publica nada ni se tocan otros proyectos.
+
 
 ## Siguiente paso
 
 1. ~~Publicar el repositorio en GitHub~~: hecho el 18 nov (privado, cuenta cuidamostuheridainfo).
-2. Jenny responde las decisiones D-02 a D-07 y D-09 a D-11, y autoriza (o no) la Etapa B.
+2. ~~Foto de fondo y recorte de la persona~~: hechos el 18 nov.
+3. Jenny revisa la maqueta (`diseno/maqueta/index.html`) y deja sus observaciones.
+4. Jenny responde las decisiones D-02 a D-05 y D-09 a D-11, y autoriza (o no) la Etapa B.
 3. Hasta entonces no se escribe código ni se crea ninguna cuenta o servicio.
 
 ## Decisiones de Jenny
@@ -19,8 +29,8 @@ Cada decisión trae la recomendación de Claude. El detalle de cada una está en
 | D-03 | **Técnica del hero.** | CSS 3D · video en bucle | CSS 3D. |
 | D-04 | **Figura de la persona en el hero.** | Ilustración vectorial original · foto con licencia comercial | Ilustración vectorial original. |
 | D-05 | **Formulario.** Mecanismo, buzón de destino y proveedor de correo. | Función de Cloudflare + Turnstile + Brevo, sin guardar datos · solo WhatsApp por ahora | Construirlo en modo simulado ya. Activarlo cuando existan el buzón y el proveedor. |
-| D-06 | **Innovación aplicada: qué se muestra y con qué estado.** IRIS todavía no está lista para comercializar; GesPro va primero; el Vademécum es investigación. | Mostrar IRIS como "en desarrollo" · omitir IRIS hasta que esté lista | GesPro y el Vademécum con enlace; IRIS solo si Jenny confirma cómo describir su estado. |
-| D-07 | **Destino del botón "Descubre nuestra innovación".** El brief no lo define. | Web de Ethical Shields AI · quitar el botón y dejar enlaces por iniciativa | Quitarlo y dejar un enlace en cada iniciativa: es un paso menos y no favorece a una sola empresa. |
+| ~~D-06~~ | **Decidido el 18 nov y ajustado después:** GesPro e IRIS no aparecen en la sección Innovación (van en ethicalshields.ai); en el hero, IRIS sí aparece como "En desarrollo" (ver DECISIONES-VIGENTES). Antes: **Innovación aplicada: qué se muestra y con qué estado.** IRIS todavía no está lista para comercializar; GesPro va primero; el Vademécum es investigación. | Mostrar IRIS como "en desarrollo" · omitir IRIS hasta que esté lista | GesPro y el Vademécum con enlace; IRIS solo si Jenny confirma cómo describir su estado. |
+| ~~D-07~~ | **Decidido el 18 nov:** el botón lleva al Vademécum de Péptidos, que es la única iniciativa de la sección. Antes: **Destino del botón "Descubre nuestra innovación".** El brief no lo define. | Web de Ethical Shields AI · quitar el botón y dejar enlaces por iniciativa | Quitarlo y dejar un enlace en cada iniciativa: es un paso menos y no favorece a una sola empresa. |
 | ~~D-08~~ | ~~Cuenta de GitHub.~~ **Decidido y hecho el 18 nov:** privado, en cuidamostuheridainfo. | | |
 | D-09 | **Protección del entorno de prueba.** | Cloudflare Access (como la Cumbre) · solo `noindex` | Access, con la misma decisión del 18 nov. |
 | D-10 | **Analítica.** | Ninguna en la primera versión · Cloudflare Web Analytics (sin cookies) | Ninguna al inicio; se decide antes del lanzamiento. |
@@ -40,7 +50,7 @@ Cada decisión trae la recomendación de Claude. El detalle de cada una está en
 | P-08 | Buzón institucional que recibirá el formulario. Hoy no existe correo en `ethicalshieldsgroup.com`. | Jenny | Activar el formulario |
 | P-09 | Responsable del tratamiento de datos y plazo de conservación de los correos recibidos, para la política de privacidad. | Jenny | Política de privacidad |
 | P-10 | Imagen para redes (1200×630). El favicon ya está hecho (18 nov). | Claude, en la Etapa C | SEO final |
-| P-11 | Descripción breve aprobada de GesPro, IRIS y el Vademécum, con su estado real. | Jenny | Sección de innovación |
+| P-11 | Descripción breve aprobada del Vademécum de Péptidos (GesPro e IRIS ya no se describen aquí). | Jenny | Sección de innovación |
 
 ## Verificaciones que no pude hacer en esta sesión
 
