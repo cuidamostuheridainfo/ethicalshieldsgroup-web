@@ -1,0 +1,22 @@
+# Dependencias y compilación (se usarán desde la Etapa B)
+node_modules/
+dist/
+.astro/
+.wrangler/
+
+# Variables y secretos: nunca en el repositorio
+.env
+.env.*
+!.env.example
+.dev.vars
+
+# Resultados de pruebas generados
+pruebas/resultados/
+playwright-report/
+test-results/
+.lighthouseci/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
