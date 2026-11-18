@@ -1,10 +1,19 @@
 # Estado del proyecto
 
-Última actualización: 18 de noviembre de 2026, noche (cúpula de pantallas; repositorio por hacerse público con GitHub Pages).
+Última actualización: 18 de noviembre de 2026, noche (hero "mar de soluciones").
+
+## 18 nov 2026, noche: hero "mar de soluciones" (concepto de Jenny)
+
+Idea: en el mercado hay miles de opciones y no sabes dónde buscar, pero en Ethical Shields Group están las soluciones. Reemplaza las ventanas en órbita.
+- **Cúpula de arriba:** pantallas genéricas del mercado, sin marcas ni texto, todas distintas: 62 en PC (tres anillos) y 16 en teléfono (dos anillos), comprobado en Chrome. Son 72 ilustraciones de rubros variados (tiendas, envíos, bancos, apps, comida, viajes y más), en tonos apagados, generadas con `herramientas/generar_mercado.py` en `diseno/maqueta/mercado/`. Giran despacio, todas juntas.
+- **La elección:** a los 2,6 s, y cada 2,3 s después, una pantalla del frente de la cúpula sale y baja hasta quedar junto a la persona, convertida en una empresa del grupo, en este orden: Cuidamos tu Herida, Cumbre CHP, Medical Shields y Ethical Shields AI ("En desarrollo"). Quedan dos a cada lado. Al terminar (unos 11 s), la cúpula se atenúa y las cuatro empresas quedan destacadas. La animación ocurre una sola vez.
+- **Teléfono:** las cuatro tarjetas quedan grandes, dos a cada lado de la persona, con nombre y una línea.
+- Con movimiento reducido se ve directamente el estado final; la pausa manual y la automática siguen funcionando. Probado en Chrome a 1440 y 390 px, en cuatro momentos de la secuencia, sin errores. Falta la prueba en el teléfono de Jenny.
 
 ## 18 nov 2026, noche: cúpula de pantallas y enlace de GitHub Pages
 
 - **Balance con la referencia** (pedido de Jenny, viendo la PC). La persona se ve más pequeña (44 % del alto del hero en PC, 42 % en teléfono) y está un poco más arriba del borde. Las 8 ventanas con nombre quedan más cerca de ella. Encima se agregó una cúpula de tres anillos de pantallas pequeñas, solo con imagen (28, 32 y 36 en PC; 12, 14 y 16 en teléfono), que giran junto con las ventanas en el mismo sentido, con la misma velocidad y con separación uniforme. Las pantallas pequeñas siempre quedan detrás de las ventanas con nombre y de la persona. En Chrome, en 6 anchos, la superposición máxima entre ventanas con nombre es del 5 % en PC y del 0 % en teléfono. Sin errores. Falta la prueba en el teléfono de Jenny.
+- **GitHub Pages activo** (18 nov, 18:18): repositorio público, rama `main`, carpeta raíz. https://cuidamostuheridainfo.github.io/ethicalshieldsgroup-web/ abre la maqueta. Comprobado sobre el sitio publicado: el HTML, el JS, las imágenes y el logo responden 200. Probado en Chrome en 6 anchos, sin errores; la superposición máxima entre ventanas con nombre es del 3 %. Cada commit con push lo actualiza en uno o dos minutos.
 - **Enlace para el comité:** Jenny eligió hacer público el repositorio y usar GitHub Pages (ver DECISIONES-VIGENTES). Se agregaron `index.html` en la raíz, que lleva a la maqueta, y `.nojekyll`. La copia publicada en Claude queda reemplazada por este enlace.
 
 ## 18 nov 2026, noche: copia para el comité

@@ -4,6 +4,8 @@
 
 ## Revisión del hero (vigente)
 
+- **Enlace del comité:** https://cuidamostuheridainfo.github.io/ethicalshieldsgroup-web/ (GitHub Pages; se actualiza con cada push). La copia publicada en Claude ya no se usa.
+
 - La revisión visual en Chrome (6 anchos, animación y movimiento reducido) está hecha y corregida: ver ESTADO, "18 nov, noche".
 - **Falta la prueba en el iPhone de Jenny:** una vuelta completa, fluidez, legibilidad de las 6 ventanas del teléfono y el botón de pausa.
 - Ethical Shields AI e IRIS se presentan como "En desarrollo" y la Unidad B2B como "En apertura": no se ofrece disponibilidad comercial.

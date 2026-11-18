@@ -136,3 +136,30 @@
 .mosaico[data-empresa="cth"]{border-color:#65f2d766}.mosaico[data-empresa="cumbre"]{border-color:#b9a0ff66}.mosaico[data-empresa="medical"]{border-color:#75cbff66}.mosaico[data-empresa="ai"]{border-color:#ffc58b66}
 @media (min-width:821px) and (max-aspect-ratio:1/1),(min-width:600px) and (max-width:820px) and (min-height:900px){.hero{--alto-foto:48%}}
 @media(max-width:820px){.hero{--alto-foto:42%}}
+
+/* ===== Concepto "mar de soluciones" (18 nov, noche). Reemplaza las ventanas en órbita. =====
+   Cúpula: pantallas genéricas distintas, en tonos apagados. Tarjetas: las cuatro empresas del grupo. */
+.ventana{display:none!important}
+.mosaico{border-color:#9fb3e055!important;box-shadow:0 0 12px #6f8fd61f!important;border-radius:5px}
+.mosaico img{filter:saturate(.85) brightness(1.08)!important}
+.tarjeta-empresa{position:absolute;left:0;top:0;z-index:120;border-radius:14px;overflow:hidden;visibility:hidden;opacity:0;
+  background:#071329;border:1.5px solid var(--acento,#19e6df);will-change:transform,width,height,opacity;
+  box-shadow:0 18px 50px #0008,0 0 calc(10px + 26px*var(--revela,0)) color-mix(in srgb,var(--acento,#19e6df) 55%,transparent)}
+.tarjeta-empresa[data-empresa="cth"]{--acento:#65f2d7}
+.tarjeta-empresa[data-empresa="cumbre"]{--acento:#b9a0ff}
+.tarjeta-empresa[data-empresa="medical"]{--acento:#75cbff}
+.tarjeta-empresa[data-empresa="ai"]{--acento:#ffc58b}
+.tarjeta-empresa .te-foto{position:absolute;inset:0}
+.tarjeta-empresa .te-foto img{width:100%;height:100%;object-fit:cover;display:block}
+.tarjeta-empresa .te-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#06132c22 0%,#06132c10 35%,#06132cee 78%)}
+.tarjeta-empresa .te-texto{position:absolute;left:12px;right:12px;bottom:11px;display:flex;flex-direction:column;gap:3px;opacity:var(--revela,0);color:#fff}
+.tarjeta-empresa .te-nombre{font-size:17px;font-weight:800;letter-spacing:-.01em;line-height:1.15;text-shadow:0 2px 8px #030818}
+.tarjeta-empresa .te-nombre::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--acento);box-shadow:0 0 10px var(--acento);margin-right:7px;vertical-align:2px}
+.tarjeta-empresa .te-linea{font-size:13px;line-height:1.35;color:#dbe6f5}
+.tarjeta-empresa .te-estado{align-self:flex-start;margin-top:4px;font-size:12px;font-weight:600;padding:3px 8px;border-radius:20px;background:#06132ce6;border:1px solid color-mix(in srgb,var(--acento) 60%,transparent)}
+@media(max-width:820px){
+  .tarjeta-empresa{border-radius:12px}
+  .tarjeta-empresa .te-texto{left:9px;right:8px;bottom:9px}
+  .tarjeta-empresa .te-nombre{font-size:14px}
+  .tarjeta-empresa .te-linea{font-size:12px}
+}

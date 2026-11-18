@@ -80,7 +80,8 @@ Lo que está aquí ya se decidió. No se reabre salvo que Jenny lo pida o aparez
   - las pantallas representan las nueve áreas del ecosistema, no solo IA;
   - debe transmitir orden y no caos;
   - incluye una versión estática para movimiento reducido.
-- **Órbita del hero (18 nov, noche, Jenny):** una sola órbita, separación y velocidad iguales para todas las ventanas, sin amontonamientos. Son 8 ventanas en PC y tableta y 6 en teléfono, alternadas por empresa. Cada ventana lleva empresa, título corto y estado.
+- **Hero "mar de soluciones" (18 nov, noche, Jenny; reemplaza la órbita de ventanas):** arriba, una cúpula de pantallas genéricas del mercado, todas distintas. La persona "elige" y bajan las cuatro empresas del grupo, que quedan dos a cada lado de ella. Mensaje: en un mar de opciones, la solución está en el grupo.
+- ~~Órbita del hero~~ (reemplazada el mismo día): una sola órbita, separación y velocidad iguales para todas las ventanas, sin amontonamientos. Son 8 ventanas en PC y tableta y 6 en teléfono, alternadas por empresa. Cada ventana lleva empresa, título corto y estado.
 - **Hero (18 nov, Jenny):**
   - fondo con la foto realista de la persona de espaldas (opción 3 de Canva, sin pantallas);
   - encima, pantallas que giran en 3D alrededor de la persona;
