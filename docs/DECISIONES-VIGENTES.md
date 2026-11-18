@@ -58,6 +58,7 @@ Lo que está aquí ya se decidió. No se reabre salvo que Jenny lo pida o aparez
 - **Sin CMS, backend, Supabase, bases de datos ni servicios externos** sin una justificación concreta y la aprobación de Jenny.
 - **SEO técnico desde el inicio.** El entorno de prueba no se indexa.
 - **Publicación:** primero un entorno de prueba protegido. La producción y el dominio requieren aprobación expresa.
+- **Repositorio (D-08, 18 nov):** `ethicalshieldsgroup-web`, **privado**, en la cuenta de GitHub **cuidamostuheridainfo** (la misma de la Cumbre), rama `main`. Dirección: https://github.com/cuidamostuheridainfo/ethicalshieldsgroup-web. Carpeta local: `C:\Users\Jenny Lopez\Documents\GitHub\ethicalshieldsgroup-web`.
 - **Commits:** los hace Jenny con GitHub Desktop.
 - **Etapas:** A → B → C → D → E. Cada una necesita autorización.
 
@@ -68,7 +69,6 @@ Pasan a la sección de decisiones cuando Jenny las apruebe (ver `PENDIENTES.md`)
 - Astro estático con TypeScript y CSS propio (D-02).
 - Hero con CSS 3D y una imagen fija como primer contenido (D-03), y figura en ilustración vectorial original (D-04).
 - Formulario: función de Cloudflare + Turnstile + proveedor de correo, sin guardar datos; modo simulado hasta tener destino (D-05).
-- Repositorio privado `ethicalshieldsgroup-web` (D-08).
 - Cloudflare Access en el entorno de prueba (D-09).
 - Sin analítica en la primera versión (D-10).
 

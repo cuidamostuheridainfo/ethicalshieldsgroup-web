@@ -1,6 +1,6 @@
 # Ethical Shields Group · Página web corporativa
 
-Repositorio de la página corporativa de la matriz del grupo, que se publicará en `https://ethicalshieldsgroup.com`. Es la puerta de entrada al ecosistema y no funciona como catálogo: presenta al grupo y lleva a los visitantes a las webs independientes de sus cuatro empresas (Medical Shields, Cuidamos tu Herida, Ethical Shields AI y Cumbre CHP).
+Repositorio privado `cuidamostuheridainfo/ethicalshieldsgroup-web` de la página corporativa de la matriz del grupo, que se publicará en `https://ethicalshieldsgroup.com`. Es la puerta de entrada al ecosistema y no funciona como catálogo: presenta al grupo y lleva a los visitantes a las webs independientes de sus cuatro empresas (Medical Shields, Cuidamos tu Herida, Ethical Shields AI y Cumbre CHP).
 
 Es un proyecto **independiente**. Por eso no se reutilizan ni se modifican repositorios, configuraciones, bases de datos, dominios ni archivos de la Cumbre, CTH, Medical Shields, Ethical Shields AI, GesPro ni IRIS.
 

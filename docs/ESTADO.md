@@ -2,6 +2,8 @@
 
 Última actualización: 18 de noviembre de 2026.
 
+**18 nov, tarde: repositorio en GitHub.** Publicado como privado en https://github.com/cuidamostuheridainfo/ethicalshieldsgroup-web, rama `main` (D-08). El primer commit (`b6bba62`) incluye la documentación, el logo y el generador. Se verificó que sin sesión GitHub responde 404, es decir, que el repositorio es privado.
+
 **18 nov, tarde: logo aprobado (propuesta B).** Se generaron:
 - las versiones horizontal y vertical, cada una en claro, oscuro, monocromático marino y monocromático blanco;
 - el símbolo solo;
@@ -22,7 +24,6 @@ Todo está en `diseno/logo/` (ver `LEEME.md` y `hoja-logo-aprobado.png`). La pro
   - `CLAUDE.md` y su ritual de inicio;
   - `README.md` y `.gitignore`;
   - `docs/`: ESTADO, PENDIENTES, DECISIONES-VIGENTES, CONTENIDOS, ESTRUCTURA, PRUEBAS y BRIEF.
-- **Todavía no está en GitHub.** Jenny lo publica con GitHub Desktop, después de decidir la cuenta y la visibilidad (D-08).
 - **Análisis de la Etapa A**, en `docs/ESTRUCTURA.md`:
   - alcance;
   - arquitectura (Astro estático, recomendado frente a React + Vite);

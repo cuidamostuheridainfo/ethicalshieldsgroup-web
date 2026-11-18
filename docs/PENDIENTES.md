@@ -4,8 +4,8 @@
 
 ## Siguiente paso
 
-1. Jenny publica este repositorio en GitHub con GitHub Desktop, después de responder la D-08.
-2. Jenny responde las decisiones D-02 a D-11 y autoriza (o no) la Etapa B.
+1. ~~Publicar el repositorio en GitHub~~: hecho el 18 nov (privado, cuenta cuidamostuheridainfo).
+2. Jenny responde las decisiones D-02 a D-07 y D-09 a D-11, y autoriza (o no) la Etapa B.
 3. Hasta entonces no se escribe código ni se crea ninguna cuenta o servicio.
 
 ## Decisiones de Jenny
@@ -21,7 +21,7 @@ Cada decisión trae la recomendación de Claude. El detalle de cada una está en
 | D-05 | **Formulario.** Mecanismo, buzón de destino y proveedor de correo. | Función de Cloudflare + Turnstile + Brevo, sin guardar datos · solo WhatsApp por ahora | Construirlo en modo simulado ya. Activarlo cuando existan el buzón y el proveedor. |
 | D-06 | **Innovación aplicada: qué se muestra y con qué estado.** IRIS todavía no está lista para comercializar; GesPro va primero; el Vademécum es investigación. | Mostrar IRIS como "en desarrollo" · omitir IRIS hasta que esté lista | GesPro y el Vademécum con enlace; IRIS solo si Jenny confirma cómo describir su estado. |
 | D-07 | **Destino del botón "Descubre nuestra innovación".** El brief no lo define. | Web de Ethical Shields AI · quitar el botón y dejar enlaces por iniciativa | Quitarlo y dejar un enlace en cada iniciativa: es un paso menos y no favorece a una sola empresa. |
-| D-08 | **Cuenta de GitHub, nombre y visibilidad del repositorio.** | Cuenta cuidamostuheridainfo · cuenta propia del grupo | Repositorio **privado** desde el inicio, con el nombre `ethicalshieldsgroup-web`. La cuenta la decides tú; si el grupo va a tener una cuenta propia, conviene crear el repositorio ahí desde el principio. |
+| ~~D-08~~ | ~~Cuenta de GitHub.~~ **Decidido y hecho el 18 nov:** privado, en cuidamostuheridainfo. | | |
 | D-09 | **Protección del entorno de prueba.** | Cloudflare Access (como la Cumbre) · solo `noindex` | Access, con la misma decisión del 18 nov. |
 | D-10 | **Analítica.** | Ninguna en la primera versión · Cloudflare Web Analytics (sin cookies) | Ninguna al inicio; se decide antes del lanzamiento. |
 | D-11 | **Orden de la alternancia claro/oscuro** (opción C). | Hero oscuro → Quiénes somos claro → Ecosistema oscuro → Innovación claro → Contacto oscuro → pie claro | Esa secuencia. El brief sugiere oscuro también para Innovación; si lo prefieres, Quiénes somos y Ecosistema se ajustan para que no queden dos bloques oscuros seguidos. |
