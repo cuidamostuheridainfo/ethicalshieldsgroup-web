@@ -11,10 +11,10 @@
 
   // Las cuatro empresas, en el orden en que la persona las elige.
   var EMPRESAS=[
-    {id:'cth',nombre:'Cuidamos tu Herida',linea:'Atención especializada y a domicilio',lado:-1,fila:0},
-    {id:'cumbre',nombre:'Cumbre CHP',linea:'Encuentro multidisciplinario de la medicina',lado:1,fila:0},
-    {id:'medical',nombre:'Medical Shields',linea:'Alianzas para el cuidado de la piel',lado:-1,fila:1},
-    {id:'ai',nombre:'Ethical Shields AI',linea:'Gestión empresarial con IA',estado:'En desarrollo',lado:1,fila:1}
+    {id:'cth',nombre:'Cuidamos tu Herida',linea:'Especialistas en heridas y piel, para pacientes e instituciones',lado:-1,fila:0},
+    {id:'cumbre',nombre:'Cumbre CHP',linea:'Encuentro interdisciplinario de la medicina para el cuidado de heridas y longevidad',lado:1,fila:0},
+    {id:'medical',nombre:'Medical Shields',linea:'Especializada en soluciones y tecnología para el sector salud',lado:-1,fila:1},
+    {id:'ai',nombre:'Ethical Shields AI',linea:'Inteligencia artificial para empresas',lado:1,fila:1}
   ];
   var INICIO=2600, PASO=2300, VUELO=1700;   // ms: primera elección, separación entre elecciones, duración del vuelo
   var FIN=INICIO+PASO*3+VUELO;               // a partir de aquí la escena queda en su estado final

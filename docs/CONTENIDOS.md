@@ -31,6 +31,15 @@ Los textos que faltan van entre corchetes. En el código, estos textos vivirán 
 | Botón | Conoce nuestras empresas (lleva a #empresas) | APROBADO |
 | Áreas de las pantallas | Salud · Atención especializada · Tecnología · Consultoría empresarial · Investigación científica · Formación profesional · Inteligencia artificial · Automatización · Gestión empresarial | APROBADO |
 
+### Tarjetas de las empresas en el hero (19 nov)
+
+| Empresa | Línea | Estado |
+| --- | --- | --- |
+| Medical Shields | Especializada en soluciones y tecnología para el sector salud | APROBADO |
+| Cuidamos tu Herida | Especialistas en heridas y piel, para pacientes e instituciones | PROPUESTA |
+| Ethical Shields AI | Inteligencia artificial para empresas | APROBADO |
+| Cumbre CHP | Encuentro interdisciplinario de la medicina para el cuidado de heridas y longevidad | APROBADO |
+
 ## 2. Quiénes somos
 
 | Elemento | Texto | Estado |

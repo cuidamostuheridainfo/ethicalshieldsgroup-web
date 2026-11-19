@@ -2,6 +2,15 @@
 
 Última actualización: 18 de noviembre de 2026, noche (hero "mar de soluciones").
 
+## 19 nov 2026: textos de las tarjetas del hero (pedido de Jenny)
+
+- Medical Shields: "Especializada en soluciones y tecnología para el sector salud".
+- Cuidamos tu Herida: "Especialistas en heridas y piel, para pacientes e instituciones" (propuesta de Claude a partir de la idea de Jenny).
+- Ethical Shields AI: "Inteligencia artificial para empresas". Se quitó la etiqueta "En desarrollo" de la tarjeta, porque ahora describe a la empresa y no un producto.
+- Cumbre CHP: "Encuentro interdisciplinario de la medicina para el cuidado de heridas y longevidad".
+
+Comprobado en Chrome a 1440, 1024, 390 y 360 px: el texto cabe en las tarjetas y no hay errores.
+
 ## 18 nov 2026, noche: hero "mar de soluciones" (concepto de Jenny)
 
 Idea: en el mercado hay miles de opciones y no sabes dónde buscar, pero en Ethical Shields Group están las soluciones. Reemplaza las ventanas en órbita.
