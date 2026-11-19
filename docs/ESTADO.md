@@ -1,6 +1,8 @@
 # Estado del proyecto
 
-Última actualización: 18 de noviembre de 2026, noche (hero "mar de soluciones").
+Última actualización: 19 de noviembre de 2026, cierre de sesión.
+
+**Resumen para retomar:** estamos en la **Etapa A** y la maqueta de la homepage está en revisión del comité. No hay sitio definitivo, no hay cuentas ni servicios creados y no se tocó el DNS. El hero vigente es el "mar de soluciones": la cúpula de pantallas genéricas, la bajada de las cuatro empresas y la persona realista. El enlace del comité es https://cuidamostuheridainfo.github.io/ethicalshieldsgroup-web/. El último commit es `483a613`. Los pendientes, en orden, están en `PENDIENTES.md`.
 
 ## 19 nov 2026: textos de las tarjetas del hero (pedido de Jenny)
 

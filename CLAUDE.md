@@ -23,6 +23,7 @@ Después de leer, decir en dos o tres líneas en qué punto estamos y cuál es e
 
 - **Etapas autorizadas:** A (análisis y arquitectura), B (preparación), C (implementación visual), D (funcionalidad y pruebas) y E (publicación). No se empieza una etapa sin la autorización expresa de Jenny.
 - **Idioma:** español neutro, entendible en Venezuela. Tuteo siempre, nunca voseo.
+- **Publicación de la maqueta:** cada push a `main` actualiza GitHub Pages en uno o dos minutos. Antes de proponer un commit, probar en Chrome a tamaño de PC y de teléfono.
 - **Commits:** los hace Jenny con GitHub Desktop. Claude prepara los archivos y propone el mensaje de commit, pero no hace push.
 - **Ejecución en vivo:** un paso a la vez. Claude lleva la lista de pendientes y no la repite completa en cada mensaje.
 - **Incertidumbre:** se dice explícitamente, sin rellenar con suposiciones.
@@ -53,8 +54,14 @@ Después de leer, decir en dos o tres líneas en qué punto estamos y cuál es e
 | `docs/ESTRUCTURA.md` | Análisis de la Etapa A: arquitectura, componentes, hero, formulario, SEO, seguridad, riesgos y plan. |
 | `docs/PRUEBAS.md` | Plan de pruebas por etapa, resultados, incidencias y licencias de los recursos. |
 | `diseno/maqueta/index.html` | Maqueta de diseño de la homepage. Se abre en el navegador directo desde la carpeta. No es el sitio final. |
+| `diseno/maqueta/hero-ecosistema.css` y `.js` | Hero vigente, el "mar de soluciones": la cúpula y las cuatro empresas. Los textos de las tarjetas están en `EMPRESAS`, al inicio del JS. |
+| `diseno/maqueta/mercado/` | 72 pantallas genéricas de la cúpula, todas distintas. Se generan con `herramientas/generar_mercado.py`. |
+| `diseno/maqueta/escenas-ecosistema/` | Imágenes de las cuatro empresas: WebP para la web y JPG maestros, con `PROMPTS.json`. Son ilustraciones con IA. |
+| `diseno/hero/pantallas/`, `diseno/maqueta/escenas/` | Versiones anteriores, sin uso; se conservan como respaldo. |
+| `_borrar/` | Archivos descartados, fuera de Git; Jenny los borra a mano. |
 | `diseno/hero/` | Foto de fondo del hero y recorte de la persona. |
 | `diseno/logo/` | Logo del grupo: propuestas, versiones aprobadas y `LEEME.md`. |
 | `herramientas/generar_logo.py` | Genera los SVG del logo. Los ajustes se hacen aquí, no editando los SVG a mano. |
+| `herramientas/generar_mercado.py`, `herramientas/generar_pantallas.py` | Generan las pantallas de la cúpula y las ilustraciones anteriores. |
 
 La estructura del código (`src/`, `public/`, `functions/`, `pruebas/`) está propuesta en `docs/ESTRUCTURA.md` y se crea en la Etapa B, cuando Jenny la autorice.

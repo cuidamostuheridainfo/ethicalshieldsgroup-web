@@ -61,7 +61,7 @@ Lo que está aquí ya se decidió. No se reabre salvo que Jenny lo pida o aparez
   - son el elemento principal de navegación.
 - **Mensajes aprobados:** son los del brief, copiados en `CONTENIDOS.md`. No se sustituyen sin autorización.
 - **Innovación (D-06 y D-07, Jenny, 18 nov):**
-  - GesPro e IRIS **no se muestran en la sección Innovación**: se presentan dentro de la web de Ethical Shields AI, a la que se llega desde su tarjeta. ~~No se muestran en la página del grupo~~ (ajustado el 18 nov: en el hero, IRIS sí aparece como "En desarrollo"; ver la sección del hero de este archivo).
+  - GesPro e IRIS **no se muestran en la sección Innovación**: se presentan dentro de la web de Ethical Shields AI, a la que se llega desde su tarjeta. ~~No se muestran en la página del grupo~~ (19 nov: en el hero actual tampoco aparece; solo están las cuatro empresas).
   - La sección muestra el título, los dos textos aprobados y una sola iniciativa: el Vademécum de Investigación en Péptidos, con el botón "Descubre nuestra innovación", que lleva a peptidos.medical-shields.com.
 - **Innovación, reglas generales:** solo iniciativas verificadas. GesPro e IRIS pertenecen a Ethical Shields AI. El Vademécum de Investigación en Péptidos es una iniciativa de Medical Shields, no una empresa. No se presentan compuestos de investigación como tratamientos aprobados.
 - **WhatsApp flotante:**
@@ -80,6 +80,7 @@ Lo que está aquí ya se decidió. No se reabre salvo que Jenny lo pida o aparez
   - las pantallas representan las nueve áreas del ecosistema, no solo IA;
   - debe transmitir orden y no caos;
   - incluye una versión estática para movimiento reducido.
+- **Textos de las tarjetas del hero (19 nov, Jenny):** ver CONTENIDOS. Ethical Shields AI se describe como "Inteligencia artificial para empresas", sin la etiqueta "En desarrollo".
 - **Hero "mar de soluciones" (18 nov, noche, Jenny; reemplaza la órbita de ventanas):** arriba, una cúpula de pantallas genéricas del mercado, todas distintas. La persona "elige" y bajan las cuatro empresas del grupo, que quedan dos a cada lado de ella. Mensaje: en un mar de opciones, la solución está en el grupo.
 - ~~Órbita del hero~~ (reemplazada el mismo día): una sola órbita, separación y velocidad iguales para todas las ventanas, sin amontonamientos. Son 8 ventanas en PC y tableta y 6 en teléfono, alternadas por empresa. Cada ventana lleva empresa, título corto y estado.
 - **Hero (18 nov, Jenny):**

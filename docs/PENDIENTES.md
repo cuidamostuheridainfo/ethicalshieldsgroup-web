@@ -1,24 +1,20 @@
 # Pendientes
 
-Última actualización: 18 de noviembre de 2026, noche.
+Última actualización: 19 de noviembre de 2026, cierre de sesión.
 
-## Revisión del hero (vigente)
+## Siguiente paso, en este orden
 
-- **Enlace del comité:** https://cuidamostuheridainfo.github.io/ethicalshieldsgroup-web/ (GitHub Pages; se actualiza con cada push). La copia publicada en Claude ya no se usa.
+1. **Respuesta del comité** sobre la maqueta: la portada ("mar de soluciones") y el orden de las secciones. Enlace: https://cuidamostuheridainfo.github.io/ethicalshieldsgroup-web/ (GitHub Pages; se actualiza con cada push). El mensaje para el comité está en el chat del 18 nov.
+2. **Prueba en el iPhone de Jenny:** la secuencia completa del hero (la cúpula, la bajada de las cuatro empresas y el estado final), la fluidez, la legibilidad de las tarjetas y el botón de pausa.
+3. **Texto de Cuidamos tu Herida** en la tarjeta del hero: Jenny confirma la propuesta ("Especialistas en heridas y piel, para pacientes e instituciones") o elige una alternativa (ver CONTENIDOS).
+4. **Opcional, según el comité:** versión corta del texto de la Cumbre en el teléfono, que hoy ocupa cinco líneas.
+5. Jenny responde las decisiones D-02, D-05 y D-09 a D-11 y autoriza (o no) la Etapa B. Hasta entonces no se escribe el sitio definitivo ni se crea ninguna cuenta o servicio.
 
-- La revisión visual en Chrome (6 anchos, animación y movimiento reducido) está hecha y corregida: ver ESTADO, "18 nov, noche".
-- **Falta la prueba en el iPhone de Jenny:** una vuelta completa, fluidez, legibilidad de las 6 ventanas del teléfono y el botón de pausa.
-- Ethical Shields AI e IRIS se presentan como "En desarrollo" y la Unidad B2B como "En apertura": no se ofrece disponibilidad comercial.
-- Los cambios son solo en la maqueta: no se publica nada ni se tocan otros proyectos.
+## Limpieza (cuando Jenny lo decida)
 
-
-## Siguiente paso
-
-1. ~~Publicar el repositorio en GitHub~~: hecho el 18 nov (privado, cuenta cuidamostuheridainfo).
-2. ~~Foto de fondo y recorte de la persona~~: hechos el 18 nov.
-3. Jenny revisa la maqueta (`diseno/maqueta/index.html`) y deja sus observaciones.
-4. Jenny responde las decisiones D-02 a D-05 y D-09 a D-11, y autoriza (o no) la Etapa B.
-3. Hasta entonces no se escribe código ni se crea ninguna cuenta o servicio.
+- `_borrar/`: fotos descartadas, excluidas en `.gitignore`. Jenny la borra a mano.
+- Carpetas que la maqueta ya no usa y se conservan como respaldo: `diseno/hero/pantallas/` (ilustraciones del 18 nov) y `diseno/maqueta/escenas/` (escenas vectoriales anteriores).
+- La copia de la maqueta publicada en Claude (https://claude.ai/artifact/TP96jmDBpF1rEEZ25jmxq6) ya no se usa: la reemplaza GitHub Pages.
 
 ## Decisiones de Jenny
 
@@ -28,12 +24,12 @@ Cada decisión trae la recomendación de Claude. El detalle de cada una está en
 | --- | --- | --- | --- |
 | ~~D-01~~ | ~~Nombre visible del grupo.~~ **Decidido el 18 nov: Ethical Shields Group.** | | |
 | D-02 | **Stack.** | Astro + CSS propio · Astro + Tailwind (como la Cumbre) · React + Vite | Astro + CSS propio. |
-| D-03 | **Técnica del hero.** | CSS 3D · video en bucle | CSS 3D. |
-| D-04 | **Figura de la persona en el hero.** | Ilustración vectorial original · foto con licencia comercial | Ilustración vectorial original. |
+| ~~D-03~~ | **Decidido en la maqueta (18 nov):** animación propia en JS y CSS, sin librerías ni video. | | |
+| ~~D-04~~ | **Decidido el 18 nov:** foto realista generada en Canva (opción 3, sin pantallas), con el recorte de la persona. | | |
 | D-05 | **Formulario.** Mecanismo, buzón de destino y proveedor de correo. | Función de Cloudflare + Turnstile + Brevo, sin guardar datos · solo WhatsApp por ahora | Construirlo en modo simulado ya. Activarlo cuando existan el buzón y el proveedor. |
-| ~~D-06~~ | **Decidido el 18 nov y ajustado después:** GesPro e IRIS no aparecen en la sección Innovación (van en ethicalshields.ai); en el hero, IRIS sí aparece como "En desarrollo" (ver DECISIONES-VIGENTES). Antes: **Innovación aplicada: qué se muestra y con qué estado.** IRIS todavía no está lista para comercializar; GesPro va primero; el Vademécum es investigación. | Mostrar IRIS como "en desarrollo" · omitir IRIS hasta que esté lista | GesPro y el Vademécum con enlace; IRIS solo si Jenny confirma cómo describir su estado. |
+| ~~D-06~~ | **Decidido el 18 nov y ajustado después:** GesPro e IRIS no aparecen en la sección Innovación (van en ethicalshields.ai); en el hero actual tampoco aparece: solo están las cuatro empresas (19 nov). Antes: **Innovación aplicada: qué se muestra y con qué estado.** IRIS todavía no está lista para comercializar; GesPro va primero; el Vademécum es investigación. | Mostrar IRIS como "en desarrollo" · omitir IRIS hasta que esté lista | GesPro y el Vademécum con enlace; IRIS solo si Jenny confirma cómo describir su estado. |
 | ~~D-07~~ | **Decidido el 18 nov:** el botón lleva al Vademécum de Péptidos, que es la única iniciativa de la sección. Antes: **Destino del botón "Descubre nuestra innovación".** El brief no lo define. | Web de Ethical Shields AI · quitar el botón y dejar enlaces por iniciativa | Quitarlo y dejar un enlace en cada iniciativa: es un paso menos y no favorece a una sola empresa. |
-| ~~D-08~~ | ~~Cuenta de GitHub.~~ **Decidido y hecho el 18 nov:** privado, en cuidamostuheridainfo. | | |
+| ~~D-08~~ | ~~Cuenta de GitHub.~~ **Decidido el 18 nov:** cuidamostuheridainfo; repositorio **público** con GitHub Pages desde el 18 nov, noche (antes privado). | | |
 | D-09 | **Protección del entorno de prueba.** | Cloudflare Access (como la Cumbre) · solo `noindex` | Access, con la misma decisión del 18 nov. |
 | D-10 | **Analítica.** | Ninguna en la primera versión · Cloudflare Web Analytics (sin cookies) | Ninguna al inicio; se decide antes del lanzamiento. |
 | D-11 | **Orden de la alternancia claro/oscuro** (opción C). | Hero oscuro → Quiénes somos claro → Ecosistema oscuro → Innovación claro → Contacto oscuro → pie claro | Esa secuencia. El brief sugiere oscuro también para Innovación; si lo prefieres, Quiénes somos y Ecosistema se ajustan para que no queden dos bloques oscuros seguidos. |
