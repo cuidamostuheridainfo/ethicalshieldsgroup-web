@@ -1,11 +1,11 @@
 # Pendientes
 
-Última actualización: 23 de noviembre de 2026.
+Última actualización: 23 de noviembre de 2026, cierre de sesión.
 
 ## Siguiente paso, en este orden
 
-1. **Respuesta del comité** sobre la maqueta: la portada ("mar de soluciones") y el orden de las secciones. Enlace: https://cuidamostuheridainfo.github.io/ethicalshieldsgroup-web/ (GitHub Pages; se actualiza con cada push). El mensaje para el comité está en el chat del 18 nov.
-2. **Prueba en el iPhone de Jenny** con las tarjetas del 23 nov: la secuencia completa del hero, la fluidez, la legibilidad del texto sobre el fondo claro, la nitidez de la imagen de Medical Shields, el botón de pausa y que WhatsApp aparezca al bajar.
+1. **Respuesta del comité** sobre la maqueta con los cambios del 23 nov: la portada ("mar de soluciones"), las tarjetas, los textos nuevos de todas las secciones y el orden. Enlace: https://cuidamostuheridainfo.github.io/ethicalshieldsgroup-web/ (GitHub Pages; se actualiza con cada push). El mensaje para el comité está en el chat del 18 nov.
+2. **Prueba en el iPhone de Jenny** con los cambios del 23 nov: la secuencia completa del hero, la fluidez, la legibilidad del texto sobre el fondo claro, la nitidez de la imagen de Medical Shields, el botón de pausa, que WhatsApp aparezca al bajar, los logos del ecosistema y el formulario blanco.
 3. **Opcional: imagen nueva de Medical Shields.** El recorte actual (406×254) se ve bien en PC, pero puede verse algo menos nítido en pantallas de alta densidad. Si se quiere una imagen nueva sin personas en primer plano, Jenny la genera en Canva o ChatGPT (Claude prepara el texto para pedirla) o autoriza el uso de Canva desde Claude.
 4. **Fecha de inicio para la trayectoria:** Jenny confirma que la actividad de importación empezó en 2019 (base de "hace más de seis años" en Quiénes somos). Si es otra, se ajusta el texto.
 5. **Versión plana del logo de Ethical Shields AI** (sin sombras, o en blanco), para usarlo sobre fondos oscuros, como el pie. El archivo actual solo funciona sobre fondo blanco.

@@ -1,8 +1,10 @@
 # Estado del proyecto
 
-Última actualización: 23 de noviembre de 2026.
+Última actualización: 23 de noviembre de 2026, cierre de sesión.
 
-**Resumen para retomar:** estamos en la **Etapa A** y la maqueta de la homepage está en revisión del comité. No hay sitio definitivo, no hay cuentas ni servicios creados y no se tocó el DNS. El hero vigente es el "mar de soluciones": la cúpula de pantallas genéricas, la bajada de las cuatro empresas y la persona realista. Las tarjetas se rediseñaron el 23 nov (imagen arriba, texto abajo sobre fondo claro y textos nuevos). El enlace del comité es https://cuidamostuheridainfo.github.io/ethicalshieldsgroup-web/. El último commit con push es `483a613`; los cambios del 23 nov esperan el commit de Jenny. Los pendientes, en orden, están en `PENDIENTES.md`.
+**Resumen para retomar:** estamos en la **Etapa A** y la maqueta de la homepage está en revisión del comité. No hay sitio definitivo, no hay cuentas ni servicios creados y no se tocó el DNS. El hero vigente es el "mar de soluciones": la cúpula de pantallas genéricas, la bajada de las cuatro empresas y la persona realista. El 23 nov se trabajó toda la homepage: tarjetas del hero (imagen arriba, texto abajo sobre fondo claro, textos nuevos), trayectoria en Quiénes somos, logos oficiales y textos y botones propios en el ecosistema con efecto 3D, nueva sección Innovación (longevidad) y formulario de contacto en blanco. El enlace del comité es https://cuidamostuheridainfo.github.io/ethicalshieldsgroup-web/. Los commits del 23 nov son `0f6afee` (homepage) y `8ce98ba` (destino del botón de innovación); este cierre va en un commit aparte. Los pendientes, en orden, están en `PENDIENTES.md`.
+
+**Al retomar:** Jenny revisa la maqueta en su iPhone y la pasa al comité. No hay trabajo de código abierto ni cambios sin guardar.
 
 ## 23 nov 2026: efecto 3D en Conoce nuestro ecosistema (Jenny)
 
@@ -13,7 +15,7 @@
 ## 23 nov 2026: sección Innovación (Jenny)
 
 - Textos nuevos de Jenny (ver CONTENIDOS): "Más años de vida. Más vida en esos años." y el recuadro "Una mirada hacia la longevidad". Ya no se menciona el Vademécum de Péptidos ni la descripción pendiente (P-11).
-- El botón "Conoce nuestra visión de innovación" sigue llevando a peptidos.medical-shields.com hasta que Jenny confirme el destino.
+- El botón "Conoce nuestra visión de innovación" lleva a la web de péptidos (Jenny, 23 nov). Esa web pasará a alojarse en Ethical Shields Group; mientras se define la dirección, el enlace sigue en peptidos.medical-shields.com.
 - En el teléfono el botón ocupa todo el ancho del recuadro, con el texto centrado y la flecha fija.
 
 ## 23 nov 2026: textos y botones de Conoce nuestro ecosistema (Jenny)
