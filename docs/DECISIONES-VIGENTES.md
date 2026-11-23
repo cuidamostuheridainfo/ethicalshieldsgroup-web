@@ -1,5 +1,9 @@
 # Decisiones vigentes
 
+## 23 nov 2026: efecto 3D del ecosistema (Jenny)
+
+- Las tarjetas del ecosistema se inclinan con el puntero. Los botones tienen una línea de luz nítida que recorre su borde al pasar el mouse, sin sombra ni difuminado. Es sutil (sin neones agresivos, según el brief) y respeta el movimiento reducido.
+
 ## 23 nov 2026: sección Innovación (Jenny)
 
 - La sección presenta la visión de longevidad ("Más años de vida. Más vida en esos años.") en lugar del Vademécum de Investigación en Péptidos. Reemplaza en lo visible lo decidido en D-07; el destino del botón queda por confirmar.

@@ -1,5 +1,9 @@
 # Pruebas
 
+## 23 nov 2026: efecto 3D del ecosistema
+
+Chrome local a 1440×900 con mouse: la tarjeta se inclina al mover el puntero, sin reflejo ni borde turquesa, y vuelve a su lugar al salir; la línea de luz recorre el borde del botón al pasar el mouse y se apaga al salir, sin dejar marcas en reposo; sin errores. En el teléfono (táctil) no se activa la inclinación. Con movimiento reducido no hay inclinación. Falta que Jenny lo pruebe con su mouse.
+
 ## 23 nov 2026: sección Innovación
 
 Chrome local a 1440×900, 1024×768, 820×1180, 390×844 y 360×740: sin errores ni desborde; el botón cabe en el recuadro en todos los anchos (52 px de alto; 58 px en el teléfono, en dos líneas centradas).

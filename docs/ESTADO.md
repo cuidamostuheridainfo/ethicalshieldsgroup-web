@@ -4,6 +4,12 @@
 
 **Resumen para retomar:** estamos en la **Etapa A** y la maqueta de la homepage está en revisión del comité. No hay sitio definitivo, no hay cuentas ni servicios creados y no se tocó el DNS. El hero vigente es el "mar de soluciones": la cúpula de pantallas genéricas, la bajada de las cuatro empresas y la persona realista. Las tarjetas se rediseñaron el 23 nov (imagen arriba, texto abajo sobre fondo claro y textos nuevos). El enlace del comité es https://cuidamostuheridainfo.github.io/ethicalshieldsgroup-web/. El último commit con push es `483a613`; los cambios del 23 nov esperan el commit de Jenny. Los pendientes, en orden, están en `PENDIENTES.md`.
 
+## 23 nov 2026: efecto 3D en Conoce nuestro ecosistema (Jenny)
+
+- **Tarjetas:** con el mouse encima se inclinan siguiendo el puntero (hasta 5° en vertical y 6° en horizontal) y se elevan 6 px con una sombra oscura. Al salir vuelven a su lugar. Jenny pidió quitar el reflejo turquesa y el borde de color (23 nov, 12:21).
+- **Botones** (corregido por Jenny el mismo día: sin sombra ni difuminado): al pasar el mouse o enfocarlos con el teclado, una línea turquesa nítida de 2 px recorre el borde del botón en 0,6 s y queda encendida mientras el mouse está encima, y la flecha avanza un poco. Al salir, la línea se apaga.
+- Solo funciona con mouse: en pantallas táctiles no hay inclinación. Con movimiento reducido no hay inclinación, línea de luz ni elevación.
+
 ## 23 nov 2026: sección Innovación (Jenny)
 
 - Textos nuevos de Jenny (ver CONTENIDOS): "Más años de vida. Más vida en esos años." y el recuadro "Una mirada hacia la longevidad". Ya no se menciona el Vademécum de Péptidos ni la descripción pendiente (P-11).
