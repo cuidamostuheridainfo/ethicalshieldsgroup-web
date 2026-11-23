@@ -1,5 +1,9 @@
 # Decisiones vigentes
 
+## 23 nov 2026: sección Innovación (Jenny)
+
+- La sección presenta la visión de longevidad ("Más años de vida. Más vida en esos años.") en lugar del Vademécum de Investigación en Péptidos. Reemplaza en lo visible lo decidido en D-07; el destino del botón queda por confirmar.
+
 ## 23 nov 2026: textos y botones del ecosistema (Jenny)
 
 - Cada tarjeta tiene su propio botón ("Conoce nuestras soluciones", "Explora nuestros servicios", "Descubre la próxima Cumbre", "Explora lo que desarrollamos"), en lugar de "Visitar sitio web". Las descripciones son las de CONTENIDOS (23 nov, tarde).

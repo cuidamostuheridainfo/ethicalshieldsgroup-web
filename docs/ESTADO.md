@@ -4,6 +4,12 @@
 
 **Resumen para retomar:** estamos en la **Etapa A** y la maqueta de la homepage está en revisión del comité. No hay sitio definitivo, no hay cuentas ni servicios creados y no se tocó el DNS. El hero vigente es el "mar de soluciones": la cúpula de pantallas genéricas, la bajada de las cuatro empresas y la persona realista. Las tarjetas se rediseñaron el 23 nov (imagen arriba, texto abajo sobre fondo claro y textos nuevos). El enlace del comité es https://cuidamostuheridainfo.github.io/ethicalshieldsgroup-web/. El último commit con push es `483a613`; los cambios del 23 nov esperan el commit de Jenny. Los pendientes, en orden, están en `PENDIENTES.md`.
 
+## 23 nov 2026: sección Innovación (Jenny)
+
+- Textos nuevos de Jenny (ver CONTENIDOS): "Más años de vida. Más vida en esos años." y el recuadro "Una mirada hacia la longevidad". Ya no se menciona el Vademécum de Péptidos ni la descripción pendiente (P-11).
+- El botón "Conoce nuestra visión de innovación" sigue llevando a peptidos.medical-shields.com hasta que Jenny confirme el destino.
+- En el teléfono el botón ocupa todo el ancho del recuadro, con el texto centrado y la flecha fija.
+
 ## 23 nov 2026: textos y botones de Conoce nuestro ecosistema (Jenny)
 
 - Descripciones nuevas de Jenny y un botón propio por empresa (ver CONTENIDOS).

@@ -9,7 +9,8 @@
 3. **Opcional: imagen nueva de Medical Shields.** El recorte actual (406×254) se ve bien en PC, pero puede verse algo menos nítido en pantallas de alta densidad. Si se quiere una imagen nueva sin personas en primer plano, Jenny la genera en Canva o ChatGPT (Claude prepara el texto para pedirla) o autoriza el uso de Canva desde Claude.
 4. **Fecha de inicio para la trayectoria:** Jenny confirma que la actividad de importación empezó en 2019 (base de "hace más de seis años" en Quiénes somos). Si es otra, se ajusta el texto.
 5. **Versión plana del logo de Ethical Shields AI** (sin sombras, o en blanco), para usarlo sobre fondos oscuros, como el pie. El archivo actual solo funciona sobre fondo blanco.
-6. Jenny responde las decisiones D-02, D-05 y D-09 a D-11 y autoriza (o no) la Etapa B. Hasta entonces no se escribe el sitio definitivo ni se crea ninguna cuenta o servicio.
+6. **Destino del botón "Conoce nuestra visión de innovación":** hoy lleva a peptidos.medical-shields.com. Jenny confirma si se mantiene o va a otra página.
+7. Jenny responde las decisiones D-02, D-05 y D-09 a D-11 y autoriza (o no) la Etapa B. Hasta entonces no se escribe el sitio definitivo ni se crea ninguna cuenta o servicio.
 
 ## Limpieza (cuando Jenny lo decida)
 
@@ -49,7 +50,7 @@ Cada decisión trae la recomendación de Claude. El detalle de cada una está en
 | P-08 | Buzón institucional que recibirá el formulario. Hoy no existe correo en `ethicalshieldsgroup.com`. | Jenny | Activar el formulario |
 | P-09 | Responsable del tratamiento de datos y plazo de conservación de los correos recibidos, para la política de privacidad. | Jenny | Política de privacidad |
 | P-10 | Imagen para redes (1200×630). El favicon ya está hecho (18 nov). | Claude, en la Etapa C | SEO final |
-| P-11 | Descripción breve aprobada del Vademécum de Péptidos (GesPro e IRIS ya no se describen aquí). | Jenny | Sección de innovación |
+| P-11 | **Ya no aplica (23 nov):** la sección Innovación no describe el Vademécum de Péptidos. | | |
 
 ## Verificaciones que no pude hacer en esta sesión
 

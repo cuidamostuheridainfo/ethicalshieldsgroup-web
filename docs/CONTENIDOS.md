@@ -73,18 +73,17 @@ Reemplazadas el 23 nov: el botón común "Visitar sitio web" y las descripciones
 
 ## 4. Innovación aplicada
 
+Textos de Jenny, 23 nov. Reemplazan el título "Innovación que genera soluciones.", los dos textos del brief y el recuadro del Vademécum de Investigación en Péptidos.
+
 | Elemento | Texto | Estado |
 | --- | --- | --- |
-| Título | Innovación que genera soluciones. | APROBADO |
-| Texto | La innovación no es solo parte de nuestra visión. Es parte de lo que hacemos. | APROBADO |
-| Texto | Desde la inteligencia artificial y la automatización hasta las iniciativas científicas, nuestras empresas transforman conocimiento en soluciones reales. | APROBADO |
-| Botón | Descubre nuestra innovación → peptidos.medical-shields.com | APROBADO (D-07, 18 nov) |
-
-GesPro e IRIS no aparecen en esta página: se presentan en la web de Ethical Shields AI (D-06).
-
-| Iniciativa | Empresa | Descripción | Estado |
-| --- | --- | --- | --- |
-| Vademécum de Investigación en Péptidos | Medical Shields | [Descripción como recurso de investigación, sin presentarlo como tratamiento] · peptidos.medical-shields.com | POR CONFIRMAR (P-11) |
+| Etiqueta | Innovación aplicada | APROBADO |
+| Título | Más años de vida. Más vida en esos años. | APROBADO (23 nov) |
+| Texto | Conectamos innovación tecnológica y avances científicos con una visión: impulsar la prevención y explorar nuevas posibilidades para vivir con salud, autonomía y bienestar. | APROBADO (23 nov) |
+| Recuadro: etiqueta | Ciencia, tecnología y futuro | APROBADO (23 nov) |
+| Recuadro: título | Una mirada hacia la longevidad | APROBADO (23 nov) |
+| Recuadro: texto | Exploramos cómo el conocimiento científico y las nuevas tecnologías pueden transformar la prevención, el cuidado y la calidad de vida. | APROBADO (23 nov) |
+| Botón | Conoce nuestra visión de innovación → | APROBADO (23 nov). Destino por confirmar: por ahora sigue en peptidos.medical-shields.com (D-07) |
 
 ## 5. Contacto
 

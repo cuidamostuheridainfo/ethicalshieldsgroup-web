@@ -1,5 +1,9 @@
 # Pruebas
 
+## 23 nov 2026: sección Innovación
+
+Chrome local a 1440×900, 1024×768, 820×1180, 390×844 y 360×740: sin errores ni desborde; el botón cabe en el recuadro en todos los anchos (52 px de alto; 58 px en el teléfono, en dos líneas centradas).
+
 ## 23 nov 2026: textos y botones del ecosistema
 
 Chrome local a 1440×900, 1024×768, 820×1180, 390×844 y 360×740: sin errores ni desborde; los cuatro botones tienen el mismo alto en cada ancho (51 px en PC y 1024, 48 px en tableta vertical y teléfono); las tarjetas tienen el mismo alto donde van en fila.
