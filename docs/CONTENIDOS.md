@@ -83,7 +83,7 @@ Textos de Jenny, 23 nov. Reemplazan el título "Innovación que genera solucione
 | Recuadro: etiqueta | Ciencia, tecnología y futuro | APROBADO (23 nov) |
 | Recuadro: título | Una mirada hacia la longevidad | APROBADO (23 nov) |
 | Recuadro: texto | Exploramos cómo el conocimiento científico y las nuevas tecnologías pueden transformar la prevención, el cuidado y la calidad de vida. | APROBADO (23 nov) |
-| Botón | Conoce nuestra visión de innovación → | APROBADO (23 nov). Destino por confirmar: por ahora sigue en peptidos.medical-shields.com (D-07) |
+| Botón | Conoce nuestra visión de innovación → | APROBADO (23 nov). Lleva a la web de péptidos (Jenny, 23 nov), que pasará a alojarse en Ethical Shields Group. Por ahora apunta a peptidos.medical-shields.com hasta tener la dirección nueva |
 
 ## 5. Contacto
 

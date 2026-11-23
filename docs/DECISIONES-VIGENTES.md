@@ -6,7 +6,7 @@
 
 ## 23 nov 2026: sección Innovación (Jenny)
 
-- La sección presenta la visión de longevidad ("Más años de vida. Más vida en esos años.") en lugar del Vademécum de Investigación en Péptidos. Reemplaza en lo visible lo decidido en D-07; el destino del botón queda por confirmar.
+- La sección presenta la visión de longevidad ("Más años de vida. Más vida en esos años.") en lugar del Vademécum de Investigación en Péptidos. Reemplaza en lo visible lo decidido en D-07. El botón sigue llevando a la web de péptidos (Jenny, 23 nov). Esa web pasará a alojarse en Ethical Shields Group; el enlace se actualiza cuando exista la dirección nueva.
 
 ## 23 nov 2026: textos y botones del ecosistema (Jenny)
 

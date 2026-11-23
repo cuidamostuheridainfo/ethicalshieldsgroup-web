@@ -9,7 +9,7 @@
 3. **Opcional: imagen nueva de Medical Shields.** El recorte actual (406×254) se ve bien en PC, pero puede verse algo menos nítido en pantallas de alta densidad. Si se quiere una imagen nueva sin personas en primer plano, Jenny la genera en Canva o ChatGPT (Claude prepara el texto para pedirla) o autoriza el uso de Canva desde Claude.
 4. **Fecha de inicio para la trayectoria:** Jenny confirma que la actividad de importación empezó en 2019 (base de "hace más de seis años" en Quiénes somos). Si es otra, se ajusta el texto.
 5. **Versión plana del logo de Ethical Shields AI** (sin sombras, o en blanco), para usarlo sobre fondos oscuros, como el pie. El archivo actual solo funciona sobre fondo blanco.
-6. **Destino del botón "Conoce nuestra visión de innovación":** hoy lleva a peptidos.medical-shields.com. Jenny confirma si se mantiene o va a otra página.
+6. **Dirección final de la web de péptidos** (decidido el 23 nov: el botón "Conoce nuestra visión de innovación" lleva a la web de péptidos, que pasará a alojarse en Ethical Shields Group). Falta definir si será un subdominio (por ejemplo, peptidos.ethicalshieldsgroup.com) o una ruta dentro de este sitio (ethicalshieldsgroup.com/peptidos). Mientras tanto, el enlace sigue en peptidos.medical-shields.com. La migración de esa web es otro proyecto: aquí solo se actualiza el enlace.
 7. Jenny responde las decisiones D-02, D-05 y D-09 a D-11 y autoriza (o no) la Etapa B. Hasta entonces no se escribe el sitio definitivo ni se crea ninguna cuenta o servicio.
 
 ## Limpieza (cuando Jenny lo decida)
