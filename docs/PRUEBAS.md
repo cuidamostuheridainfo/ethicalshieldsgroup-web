@@ -1,5 +1,9 @@
 # Pruebas
 
+## 23 nov 2026: Conoce nuestro ecosistema
+
+Chrome local a 1440×900, 1024×768, 820×1180, 390×844 y 360×740: sin errores de consola ni desborde horizontal; los cuatro logos cargan; las cuatro tarjetas tienen el mismo alto en cada ancho; un solo h1; las tarjetas y el pie siguen el orden Medical Shields, Cuidamos tu Herida, Cumbre CHP y Ethical Shields AI.
+
 ## 23 nov 2026: Quiénes somos
 
 Chrome local a 1440×900, 390×844 y 360×740: sin errores de consola ni desborde horizontal; un solo h1; el enlace de cierre ocupa una línea en PC y dos en el teléfono, y lleva a #empresas.
@@ -113,4 +117,8 @@ Aquí se anota cada imagen, ícono o fuente que se incorpore al proyecto, con su
 | Recorte de la persona (`persona-recorte.png`) | Hecho por Claude con rembg (isnet-general-use) a partir del fondo | Derivado del anterior | Hero |
 | Ilustraciones de las pantallas (`diseno/hero/pantallas/*.svg`) | Dibujadas por Claude con `herramientas/generar_pantallas.py` (18 nov). Reemplazan las fotos reales, que se descartaron por decisión de Jenny | Propias | Pantallas del hero |
 | Imagen de Medical Shields en el hero (`diseno/maqueta/escenas-ecosistema/medical-fondo.webp`) | Recorte hecho por Claude (23 nov) de la ilustración con IA `medical.jpg`, sin la pareja del primer plano | Derivado de la ilustración original | Tarjeta de Medical Shields en el hero |
+| Logo de Medical Shields (`logos-empresas/medical-shields.svg`) | Copia sin cambios de `cumbre-web/assets/img/marcas/logo-medical-shields-claro.svg` (autorizado por Jenny, 23 nov) | Propiedad del grupo | Ecosistema |
+| Logo de Cuidamos tu Herida (`logos-empresas/cuidamos-tu-herida.png`) | "Logo-cuidamos-tu-heridaPNG.png" de la carpeta de Drive compartida por Jenny (23 nov) | Propiedad del grupo | Ecosistema |
+| Logo de Cumbre CHP (`logos-empresas/cumbre-chp.png`) | `cumbre-web/assets/img/logo-cumbre-27-oscuro.png` (II Cumbre), recortado y reducido a 1000 px | Propiedad del grupo | Ecosistema |
+| Logo de Ethical Shields AI (`logos-empresas/ethical-shields-ai.png`) | Imagen enviada por Jenny en el chat (23 nov); Claude le quitó el fondo blanco y la recortó | Propiedad del grupo | Ecosistema |
 | Símbolo "Evolución de origen" | Redibujado en vector a partir de la imagen aprobada por el comité (16 nov); no se copió ningún archivo | Propiedad del grupo | `diseno/logo/` |

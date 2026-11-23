@@ -57,6 +57,7 @@ Después de leer, decir en dos o tres líneas en qué punto estamos y cuál es e
 | `diseno/maqueta/hero-ecosistema.css` y `.js` | Hero vigente, el "mar de soluciones": la cúpula y las cuatro empresas. Los textos de las tarjetas están en `EMPRESAS`, al inicio del JS. |
 | `diseno/maqueta/mercado/` | 72 pantallas genéricas de la cúpula, todas distintas. Se generan con `herramientas/generar_mercado.py`. |
 | `diseno/maqueta/escenas-ecosistema/` | Imágenes de las cuatro empresas: WebP para la web y JPG maestros, con `PROMPTS.json`. Son ilustraciones con IA. Medical Shields usa `medical-fondo.webp`, un recorte de `medical.jpg` sin la pareja del primer plano. |
+| `diseno/maqueta/logos-empresas/` | Logos oficiales de las cuatro empresas para las tarjetas del ecosistema. Origen de cada uno en `docs/PRUEBAS.md`. |
 | `diseno/hero/pantallas/`, `diseno/maqueta/escenas/` | Versiones anteriores, sin uso; se conservan como respaldo. |
 | `_borrar/` | Archivos descartados, fuera de Git; Jenny los borra a mano. |
 | `diseno/hero/` | Foto de fondo del hero y recorte de la persona. |

@@ -1,5 +1,13 @@
 # Decisiones vigentes
 
+## 23 nov 2026: Conoce nuestro ecosistema (Jenny)
+
+- Las tarjetas muestran el logo oficial de cada empresa en lugar del título visible. El nombre queda oculto para lectores de pantalla y buscadores.
+- Orden igual que en el hero: Medical Shields, Cuidamos tu Herida, Cumbre CHP y Ethical Shields AI.
+- La Cumbre CHP usa el logo de la II Cumbre.
+- Descripciones de CONTENIDOS del 23 nov; reemplazan las del brief.
+- Excepción autorizada por Jenny: se leyó `cumbre-web` solo para copiar logos.
+
 ## 23 nov 2026: tarjetas del hero (Jenny)
 
 - **Diseño:** imagen arriba con corte limpio y texto abajo, centrado, sobre fondo casi blanco (#fbfcfe), con nombre azul marino y puntos de color oscurecidos. Las cuatro tarjetas tienen el mismo tamaño. Reemplaza el texto sobre la imagen con degradado oscuro.

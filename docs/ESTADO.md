@@ -4,6 +4,19 @@
 
 **Resumen para retomar:** estamos en la **Etapa A** y la maqueta de la homepage está en revisión del comité. No hay sitio definitivo, no hay cuentas ni servicios creados y no se tocó el DNS. El hero vigente es el "mar de soluciones": la cúpula de pantallas genéricas, la bajada de las cuatro empresas y la persona realista. Las tarjetas se rediseñaron el 23 nov (imagen arriba, texto abajo sobre fondo claro y textos nuevos). El enlace del comité es https://cuidamostuheridainfo.github.io/ethicalshieldsgroup-web/. El último commit con push es `483a613`; los cambios del 23 nov esperan el commit de Jenny. Los pendientes, en orden, están en `PENDIENTES.md`.
 
+## 23 nov 2026: logos y textos en Conoce nuestro ecosistema (Jenny)
+
+- **Logos oficiales** en las cuatro tarjetas, en `diseno/maqueta/logos-empresas/`:
+  - Medical Shields: SVG en vector para fondo claro, copiado de `cumbre-web`;
+  - Cuidamos tu Herida: PNG a color de 1000 px, de la carpeta de Drive que pasó Jenny;
+  - Cumbre CHP: logo de la II Cumbre ("Heridas, Piel y Longevidad"), versión oscura de `cumbre-web`, reducida a 1000 px;
+  - Ethical Shields AI: imagen que envió Jenny por el chat, sin el fondo blanco y recortada (1000 px).
+  Jenny autorizó leer `cumbre-web` solo para copiar los logos; no se modificó nada ahí.
+- **Sin título visible:** el nombre está en el logo. Queda como h3 oculto para lectores de pantalla y buscadores.
+- **Orden** igual que en el hero: Medical Shields, Cuidamos tu Herida, Cumbre CHP y Ethical Shields AI. El pie usa el mismo orden.
+- **Descripciones nuevas** (ver CONTENIDOS).
+- El PNG del primer enlace de Drive ("medebesunosperros.png") era el logo de CTH en blanco: no se usó, porque no se ve sobre fondo blanco.
+
 ## 23 nov 2026: texto de trayectoria en Quiénes somos (Jenny)
 
 - El recuadro "[Trayectoria breve…]" se reemplazó por el texto de Jenny (ver CONTENIDOS). "Hace más de seis años" cuenta desde 2019, cuando empezó Medical Shields; Jenny confirmará la fecha.

@@ -82,8 +82,12 @@ section.bloque{padding:110px 0}
 .oscuro .etiqueta{color:var(--turquesa)}
 .tarjetas{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
 .tarjeta{background:#fff;color:var(--marino);border-radius:22px;padding:30px 26px 26px;display:flex;flex-direction:column;gap:18px;min-height:340px}
-.tarjeta .logo{height:72px;border-radius:14px;border:1.5px dashed #B8C0DE;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:var(--texto2);text-align:center;padding:0 12px}
+.tarjeta .logo{height:72px;display:flex;align-items:center;justify-content:flex-start}
+.tarjeta .logo img{display:block;max-width:100%;max-height:56px;width:auto;height:auto}
+.tarjeta .logo img.emblema{max-height:72px}
 .tarjeta h3{margin:0;font-size:22px;font-weight:800}
+/* El nombre ya está en el logo: el título queda solo para lectores de pantalla y buscadores. */
+.solo-lectores{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
 .tarjeta p{margin:0;font-size:15px;line-height:1.6;color:var(--texto2);flex-grow:1}
 .tarjeta a{justify-content:center;background:var(--marino);color:#fff;min-height:48px;font-size:15px}
 .innovacion{background:var(--gris)}
@@ -261,15 +265,15 @@ textarea{padding:12px 14px;resize:vertical}
 
   // Empresas: tarjetas y pie
   var empresas = [
-    ['Medical Shields','Empresa especializada en soluciones, productos, tecnología y servicios para el sector salud.','https://medicalshields.com/'],
-    ['Cuidamos tu Herida','Atención especializada y soluciones para el cuidado de heridas.','https://cuidamostuherida.com/'],
-    ['Ethical Shields AI','Consultoría, tecnología, inteligencia artificial, automatización y soluciones empresariales.','https://ethicalshields.ai/'],
-    ['Cumbre CHP','Iniciativa de formación, intercambio científico y conexión profesional.','https://cumbrechp.org/']
+    ['Medical Shields','Representación exclusiva en Venezuela de laboratorios internacionales y marcas para el cuidado de la salud y la piel.','https://medicalshields.com/','medical-shields.svg'],
+    ['Cuidamos tu Herida','Atención médica especializada en heridas y piel, con médicos especialistas, en consulta y a domicilio.','https://cuidamostuherida.com/','cuidamos-tu-herida.png'],
+    ['Cumbre CHP','Encuentro interdisciplinario médico sobre el cuidado avanzado de heridas, piel y longevidad.','https://cumbrechp.org/','cumbre-chp.png'],
+    ['Ethical Shields AI','Inteligencia artificial aplicada a empresas: aplicaciones que automatizan procesos y ayudan a gestionar mejor las operaciones.','https://ethicalshields.ai/','ethical-shields-ai.png','emblema']
   ];
   var cont = document.getElementById('tarjetas'), pie = document.getElementById('pie-empresas');
   empresas.forEach(function(e){
     var art = document.createElement('article'); art.className = 'tarjeta';
-    art.innerHTML = '<div class="logo">[Logo oficial de ' + e[0] + ']</div><h3>' + e[0] + '</h3><p>' + e[1] + '</p>' +
+    art.innerHTML = '<div class="logo"><img src="./logos-empresas/' + e[3] + '" alt="Logo de ' + e[0] + '"' + (e[4] ? ' class="' + e[4] + '"' : '') + ' decoding="async"></div><h3 class="solo-lectores">' + e[0] + '</h3><p>' + e[1] + '</p>' +
       '<a class="boton" href="' + e[2] + '" target="_blank" rel="noopener">Visitar sitio web <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>';
     cont.appendChild(art);
     var a = document.createElement('a'); a.href = e[2]; a.target = '_blank'; a.rel = 'noopener'; a.textContent = e[0]; pie.appendChild(a);

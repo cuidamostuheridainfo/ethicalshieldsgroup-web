@@ -60,16 +60,16 @@ Textos anteriores (19 nov), reemplazados: Medical Shields "Especializada en solu
 
 **Título:** Conoce nuestro ecosistema (APROBADO).
 
-Todas las tarjetas llevan el botón "Visitar sitio web". La descripción de cada empresa está tomada del brief y está POR CONFIRMAR como texto final de la tarjeta, porque puede necesitar acortarse.
+Cada tarjeta lleva el logo oficial, la descripción y el botón "Visitar sitio web". El nombre de la empresa ya no se ve (está en el logo): queda como título oculto para lectores de pantalla y buscadores (23 nov, Jenny). El orden es el mismo del hero.
 
-| Empresa | Descripción | Enlace |
-| --- | --- | --- |
-| Medical Shields | Empresa especializada en soluciones, productos, tecnología y servicios para el sector salud. | [medicalshields.com o medical-shields.com] (P-04) |
-| Cuidamos tu Herida | Atención especializada y soluciones para el cuidado de heridas. | [cuidamostuherida.com] (P-04) |
-| Ethical Shields AI | Consultoría, tecnología, inteligencia artificial, automatización y soluciones empresariales. | [ethicalshields.ai] (P-04) |
-| Cumbre CHP | Iniciativa de formación, intercambio científico y conexión profesional. | [cumbrechp.org] (P-04) |
+| Empresa | Descripción | Estado | Enlace |
+| --- | --- | --- | --- |
+| Medical Shields | Representación exclusiva en Venezuela de laboratorios internacionales y marcas para el cuidado de la salud y la piel. | APROBADO (23 nov) | [medicalshields.com o medical-shields.com] (P-04) |
+| Cuidamos tu Herida | Atención médica especializada en heridas y piel, con médicos especialistas, en consulta y a domicilio. | APROBADO (23 nov) | [cuidamostuherida.com] (P-04) |
+| Cumbre CHP | Encuentro interdisciplinario médico sobre el cuidado avanzado de heridas, piel y longevidad. | APROBADO (23 nov) | [cumbrechp.org] (P-04) |
+| Ethical Shields AI | Inteligencia artificial aplicada a empresas: aplicaciones que automatizan procesos y ayudan a gestionar mejor las operaciones. | APROBADO (23 nov) | [ethicalshields.ai] (P-04) |
 
-**Nota:** en el ecosistema de la Cumbre (11 nov), la línea de Ethical Shields AI destacaba GesPro ("IA financiera para empresas"). La descripción del brief es más amplia. Aquí se usa la del brief, salvo que Jenny indique otra cosa.
+Descripciones anteriores (brief), reemplazadas el 23 nov: Medical Shields "Empresa especializada en soluciones, productos, tecnología y servicios para el sector salud."; Cuidamos tu Herida "Atención especializada y soluciones para el cuidado de heridas."; Ethical Shields AI "Consultoría, tecnología, inteligencia artificial, automatización y soluciones empresariales."; Cumbre CHP "Iniciativa de formación, intercambio científico y conexión profesional."
 
 ## 4. Innovación aplicada
 
