@@ -1,5 +1,9 @@
 # Pruebas
 
+## 23 nov 2026: textos y botones del ecosistema
+
+Chrome local a 1440×900, 1024×768, 820×1180, 390×844 y 360×740: sin errores ni desborde; los cuatro botones tienen el mismo alto en cada ancho (51 px en PC y 1024, 48 px en tableta vertical y teléfono); las tarjetas tienen el mismo alto donde van en fila.
+
 ## 23 nov 2026: formulario de contacto
 
 Chrome local a 1440×900, 390×844 y 360×740: sin errores de consola ni desborde horizontal; los campos, la casilla y el botón se ven y funcionan; el botón usa Plus Jakarta Sans.

@@ -1,5 +1,9 @@
 # Decisiones vigentes
 
+## 23 nov 2026: textos y botones del ecosistema (Jenny)
+
+- Cada tarjeta tiene su propio botón ("Conoce nuestras soluciones", "Explora nuestros servicios", "Descubre la próxima Cumbre", "Explora lo que desarrollamos"), en lugar de "Visitar sitio web". Las descripciones son las de CONTENIDOS (23 nov, tarde).
+
 ## 23 nov 2026: formulario de contacto (Jenny)
 
 - Formulario blanco sobre el fondo azul oscuro de la sección, letras negras y bordes de los campos en azul.

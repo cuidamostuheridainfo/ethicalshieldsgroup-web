@@ -89,7 +89,8 @@ section.bloque{padding:110px 0}
 /* El nombre ya está en el logo: el título queda solo para lectores de pantalla y buscadores. */
 .solo-lectores{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
 .tarjeta p{margin:0;font-size:15px;line-height:1.6;color:var(--texto2);flex-grow:1}
-.tarjeta a{justify-content:center;background:var(--marino);color:#fff;min-height:48px;font-size:15px}
+.tarjeta a{width:100%;justify-content:center;text-align:center;background:var(--marino);color:#fff;min-height:48px;font-size:14px;line-height:1.25;padding:8px 16px;gap:8px}
+.tarjeta a svg{flex-shrink:0;width:16px;height:16px}
 .innovacion{background:var(--gris)}
 .destacado{background:#fff;border-radius:24px;padding:36px;box-shadow:0 20px 50px rgba(20,27,77,.10);display:flex;flex-direction:column;gap:16px}
 .destacado h3{margin:0;font-size:26px;font-weight:800}
@@ -269,19 +270,20 @@ button.boton{font-family:inherit}
   mm.addEventListener('click', function(e){ if (e.target.tagName === 'A') { mm.classList.remove('abierto'); bm.setAttribute('aria-expanded', 'false'); } });
 
   // Empresas: tarjetas y pie
+  // Ecosistema (23 nov, Jenny): nombre, texto, enlace, logo, clase del logo y texto del botón.
   var empresas = [
-    ['Medical Shields','Representación exclusiva en Venezuela de laboratorios internacionales y marcas para el cuidado de la salud y la piel.','https://medicalshields.com/','medical-shields.svg'],
-    ['Cuidamos tu Herida','Atención médica especializada en heridas y piel, con médicos especialistas, en consulta y a domicilio.','https://cuidamostuherida.com/','cuidamos-tu-herida.png'],
-    ['Cumbre CHP','Encuentro interdisciplinario médico sobre el cuidado avanzado de heridas, piel y longevidad.','https://cumbrechp.org/','cumbre-chp.png'],
-    ['Ethical Shields AI','Inteligencia artificial aplicada a empresas: aplicaciones que automatizan procesos y ayudan a gestionar mejor las operaciones.','https://ethicalshields.ai/','ethical-shields-ai.png','emblema']
+    {nombre:'Medical Shields',texto:'Acercamos a Venezuela soluciones internacionales para el cuidado de la piel y la innovación farmacéutica, como representantes exclusivos de laboratorios especializados.',url:'https://medicalshields.com/',logo:'medical-shields.svg',boton:'Conoce nuestras soluciones'},
+    {nombre:'Cuidamos tu Herida',texto:'Cuidado médico avanzado de la piel y las heridas, con enfoque en prevención y longevidad. Atención para pacientes y soluciones para empresas, organizaciones y seguros.',url:'https://cuidamostuherida.com/',logo:'cuidamos-tu-herida.png',boton:'Explora nuestros servicios'},
+    {nombre:'Cumbre CHP',texto:'Conectamos profesionales de distintas disciplinas para compartir avances y explorar el futuro de la medicina. Próximo encuentro: medicina en desastres y tecnología para la longevidad.',url:'https://cumbrechp.org/',logo:'cumbre-chp.png',boton:'Descubre la próxima Cumbre'},
+    {nombre:'Ethical Shields AI',texto:'Transformamos procesos dispersos en una gestión conectada. Desarrollamos aplicaciones con IA para automatizar operaciones, desde la captación de clientes hasta la cobranza, los pagos y los bancos.',url:'https://ethicalshields.ai/',logo:'ethical-shields-ai.png',clase:'emblema',boton:'Explora lo que desarrollamos'}
   ];
   var cont = document.getElementById('tarjetas'), pie = document.getElementById('pie-empresas');
   empresas.forEach(function(e){
     var art = document.createElement('article'); art.className = 'tarjeta';
-    art.innerHTML = '<div class="logo"><img src="./logos-empresas/' + e[3] + '" alt="Logo de ' + e[0] + '"' + (e[4] ? ' class="' + e[4] + '"' : '') + ' decoding="async"></div><h3 class="solo-lectores">' + e[0] + '</h3><p>' + e[1] + '</p>' +
-      '<a class="boton" href="' + e[2] + '" target="_blank" rel="noopener">Visitar sitio web <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>';
+    art.innerHTML = '<div class="logo"><img src="./logos-empresas/' + e.logo + '" alt="Logo de ' + e.nombre + '"' + (e.clase ? ' class="' + e.clase + '"' : '') + ' decoding="async"></div><h3 class="solo-lectores">' + e.nombre + '</h3><p>' + e.texto + '</p>' +
+      '<a class="boton" href="' + e.url + '" target="_blank" rel="noopener" aria-label="' + e.boton + ': sitio web de ' + e.nombre + ' (se abre en otra pestaña)">' + e.boton + ' <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>';
     cont.appendChild(art);
-    var a = document.createElement('a'); a.href = e[2]; a.target = '_blank'; a.rel = 'noopener'; a.textContent = e[0]; pie.appendChild(a);
+    var a = document.createElement('a'); a.href = e.url; a.target = '_blank'; a.rel = 'noopener'; a.textContent = e.nombre; pie.appendChild(a);
   });
   window.alertaMaqueta = function(){ document.getElementById('aviso-form').textContent = 'Maqueta: aquí aparecerá la confirmación del envío.'; };
 })();
