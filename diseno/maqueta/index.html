@@ -73,6 +73,10 @@ section.bloque{padding:110px 0}
 .dos-columnas{display:flex;flex-wrap:wrap;gap:56px;align-items:flex-start}
 .dos-columnas > *{flex:1 1 420px;min-width:0}
 .texto-grande{margin:0;font-size:19px;line-height:1.65;color:#2B3263}
+.enlace-flecha{font-size:17px;font-weight:700;line-height:1.5;color:var(--marino);text-decoration:underline;text-decoration-color:#19e6df;text-decoration-thickness:2px;text-underline-offset:6px}
+.enlace-flecha:hover,.enlace-flecha:focus-visible{text-decoration-color:var(--marino)}
+.enlace-flecha span{display:inline-block;transition:transform .2s}
+.enlace-flecha:hover span{transform:translateX(4px)}
 .pendiente{padding:16px 18px;border-radius:12px;background:var(--gris);font-size:15px;line-height:1.6;color:var(--texto2)}
 .oscuro{background:var(--marino);color:#fff}
 .oscuro .etiqueta{color:var(--turquesa)}
@@ -169,8 +173,8 @@ textarea{padding:12px 14px;resize:vertical}
     <div style="display:flex;flex-direction:column;gap:22px">
       <p class="texto-grande">En Ethical Shields Group integramos salud, tecnología e innovación para ofrecer soluciones que conectan personas, profesionales y organizaciones.</p>
       <p class="texto-grande" style="color:var(--marino);font-weight:700">Cuatro empresas especializadas. Una visión compartida. Más posibilidades.</p>
-      <p class="pendiente">[Trayectoria breve: uno o dos datos verificables de origen y recorrido del grupo]</p>
-      <div><a class="boton" href="#empresas" style="border:2px solid var(--marino);color:var(--marino)">Conoce nuestras empresas</a></div>
+      <p style="margin:0;font-size:17px;line-height:1.7;color:var(--texto2)">Hace más de seis años comenzamos acercando soluciones médicas internacionales a Venezuela. Hoy impulsamos la atención especializada, el intercambio científico y la innovación tecnológica: desde soluciones orientadas a vivir más años con salud y autonomía hasta aplicaciones con IA que ayudan a las empresas a automatizar procesos y gestionar mejor sus operaciones.</p>
+      <div><a class="enlace-flecha" href="#empresas">Descubre cómo nuestras empresas pueden conectar contigo <span aria-hidden="true">→</span></a></div>
     </div>
   </div>
 </section>

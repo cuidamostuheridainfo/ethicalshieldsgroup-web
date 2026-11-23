@@ -4,6 +4,12 @@
 
 **Resumen para retomar:** estamos en la **Etapa A** y la maqueta de la homepage está en revisión del comité. No hay sitio definitivo, no hay cuentas ni servicios creados y no se tocó el DNS. El hero vigente es el "mar de soluciones": la cúpula de pantallas genéricas, la bajada de las cuatro empresas y la persona realista. Las tarjetas se rediseñaron el 23 nov (imagen arriba, texto abajo sobre fondo claro y textos nuevos). El enlace del comité es https://cuidamostuheridainfo.github.io/ethicalshieldsgroup-web/. El último commit con push es `483a613`; los cambios del 23 nov esperan el commit de Jenny. Los pendientes, en orden, están en `PENDIENTES.md`.
 
+## 23 nov 2026: texto de trayectoria en Quiénes somos (Jenny)
+
+- El recuadro "[Trayectoria breve…]" se reemplazó por el texto de Jenny (ver CONTENIDOS). "Hace más de seis años" cuenta desde 2019, cuando empezó Medical Shields; Jenny confirmará la fecha.
+- El botón "Conoce nuestras empresas" de esta sección pasó a ser el enlace "Descubre cómo nuestras empresas pueden conectar contigo →". Es un enlace y no un botón porque la frase es larga: como botón se partía en dos líneas en PC y en tres en el teléfono.
+- Probado en Chrome a 1440, 390 y 360 px: sin errores ni desborde y con un solo h1.
+
 ## 23 nov 2026: rediseño de las tarjetas del hero (pedido de Jenny, a partir de una observación de Marisol)
 
 - **Diseño de la tarjeta:** la imagen va arriba, completa y con un corte limpio. Debajo hay una franja casi blanca (#fbfcfe) con el nombre en azul marino y la línea en gris azulado, ambos centrados. El texto ya no tapa la imagen, que antes ocultaba la curación del brazo en CTH y los productos en Medical Shields. La letra es un 5 % más pequeña: los cuatro nombres caben en una línea en todos los anchos. Los puntos de color son más oscuros y llevan un aro suave para verse sobre el fondo claro. El borde y el brillo de cada tarjeta no cambian.

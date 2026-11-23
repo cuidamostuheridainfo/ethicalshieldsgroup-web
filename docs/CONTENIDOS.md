@@ -53,8 +53,8 @@ Textos anteriores (19 nov), reemplazados: Medical Shields "Especializada en solu
 | Título | Más que empresas. Un ecosistema conectado. | APROBADO |
 | Texto | En Ethical Shields Group integramos salud, tecnología e innovación para ofrecer soluciones que conectan personas, profesionales y organizaciones. | APROBADO |
 | Cierre | Cuatro empresas especializadas. Una visión compartida. Más posibilidades. | APROBADO |
-| Trayectoria breve | [Uno o dos datos verificables de origen y trayectoria] | POR CONFIRMAR (P-05) |
-| Botón | Conoce nuestras empresas (lleva a #empresas) | APROBADO |
+| Trayectoria breve | Hace más de seis años comenzamos acercando soluciones médicas internacionales a Venezuela. Hoy impulsamos la atención especializada, el intercambio científico y la innovación tecnológica: desde soluciones orientadas a vivir más años con salud y autonomía hasta aplicaciones con IA que ayudan a las empresas a automatizar procesos y gestionar mejor sus operaciones. | APROBADO (23 nov). "Más de seis años" cuenta desde 2019, inicio de Medical Shields; Jenny confirmará la fecha |
+| Enlace de cierre | Descubre cómo nuestras empresas pueden conectar contigo → (lleva a #empresas; enlace en negrita con subrayado turquesa, no botón) | APROBADO (23 nov). Reemplaza el botón "Conoce nuestras empresas" de esta sección |
 
 ## 3. Nuestro ecosistema
 

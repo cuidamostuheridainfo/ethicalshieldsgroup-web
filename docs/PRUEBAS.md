@@ -1,5 +1,9 @@
 # Pruebas
 
+## 23 nov 2026: Quiénes somos
+
+Chrome local a 1440×900, 390×844 y 360×740: sin errores de consola ni desborde horizontal; un solo h1; el enlace de cierre ocupa una línea en PC y dos en el teléfono, y lleva a #empresas.
+
 ## 23 nov 2026: tarjetas del hero rediseñadas
 
 Chrome local (Playwright) sobre `diseno/maqueta/index.html`, con la animación completa y con movimiento reducido, en 1920×1080, 1440×900, 1366×657, 1280×720, 1024×768, 820×1180, 768×1024, 390×844, 375×667 y 360×740:
