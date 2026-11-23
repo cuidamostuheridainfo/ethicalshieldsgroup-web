@@ -4,6 +4,13 @@
 
 **Resumen para retomar:** estamos en la **Etapa A** y la maqueta de la homepage está en revisión del comité. No hay sitio definitivo, no hay cuentas ni servicios creados y no se tocó el DNS. El hero vigente es el "mar de soluciones": la cúpula de pantallas genéricas, la bajada de las cuatro empresas y la persona realista. Las tarjetas se rediseñaron el 23 nov (imagen arriba, texto abajo sobre fondo claro y textos nuevos). El enlace del comité es https://cuidamostuheridainfo.github.io/ethicalshieldsgroup-web/. El último commit con push es `483a613`; los cambios del 23 nov esperan el commit de Jenny. Los pendientes, en orden, están en `PENDIENTES.md`.
 
+## 23 nov 2026: formulario de contacto en blanco (Jenny)
+
+- El formulario de "Conectemos nuevas oportunidades" es ahora una tarjeta blanca sobre el fondo azul oscuro.
+- Etiquetas en negro; "(opcional)" y la nota de la maqueta en gris.
+- Campos con fondo blanco y borde azul de la marca (#0E8FCB). Al enfocarlos, el borde pasa a marino y aparece un halo azul.
+- La casilla y el enlace de privacidad pasan a azul. El botón "Solicitar información" sigue turquesa y ahora usa la tipografía de la página (antes usaba la del navegador).
+
 ## 23 nov 2026: logos y textos en Conoce nuestro ecosistema (Jenny)
 
 - **Logos oficiales** en las cuatro tarjetas, en `diseno/maqueta/logos-empresas/`:

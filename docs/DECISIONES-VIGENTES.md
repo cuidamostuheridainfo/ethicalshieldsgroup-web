@@ -1,5 +1,9 @@
 # Decisiones vigentes
 
+## 23 nov 2026: formulario de contacto (Jenny)
+
+- Formulario blanco sobre el fondo azul oscuro de la sección, letras negras y bordes de los campos en azul.
+
 ## 23 nov 2026: Conoce nuestro ecosistema (Jenny)
 
 - Las tarjetas muestran el logo oficial de cada empresa en lugar del título visible. El nombre queda oculto para lectores de pantalla y buscadores.

@@ -1,5 +1,9 @@
 # Pruebas
 
+## 23 nov 2026: formulario de contacto
+
+Chrome local a 1440×900, 390×844 y 360×740: sin errores de consola ni desborde horizontal; los campos, la casilla y el botón se ven y funcionan; el botón usa Plus Jakarta Sans.
+
 ## 23 nov 2026: Conoce nuestro ecosistema
 
 Chrome local a 1440×900, 1024×768, 820×1180, 390×844 y 360×740: sin errores de consola ni desborde horizontal; los cuatro logos cargan; las cuatro tarjetas tienen el mismo alto en cada ancho; un solo h1; las tarjetas y el pie siguen el orden Medical Shields, Cuidamos tu Herida, Cumbre CHP y Ethical Shields AI.

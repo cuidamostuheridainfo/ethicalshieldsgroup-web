@@ -95,11 +95,16 @@ section.bloque{padding:110px 0}
 .destacado h3{margin:0;font-size:26px;font-weight:800}
 .contacto{background:#0A0F33;color:#fff}
 .contacto .etiqueta{color:var(--turquesa)}
-form{background:var(--marino);border:1px solid rgba(25,230,223,.25);border-radius:24px;padding:34px;display:grid;gap:18px}
-form label{font-size:14px;font-weight:600}
+/* 23 nov 2026 (Jenny): formulario blanco sobre el fondo oscuro, letras negras y bordes azules. */
+form{background:#fff;color:#111;border-radius:24px;padding:34px;display:grid;gap:18px;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+form label{font-size:14px;font-weight:600;color:#111}
+form .nota{font-weight:400;color:#555}
+form a{color:var(--azul)}
 form .campo{display:flex;flex-direction:column;gap:8px}
-input,select,textarea{font:inherit;min-height:48px;border-radius:12px;border:1px solid #3A4380;background:#0A0F33;color:#fff;padding:0 14px}
+input,select,textarea{font:inherit;min-height:48px;border-radius:12px;border:1.5px solid var(--azul);background:#fff;color:#111;padding:0 14px}
+input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid rgba(14,143,203,.35);outline-offset:1px;border-color:var(--marino)}
 textarea{padding:12px 14px;resize:vertical}
+button.boton{font-family:inherit}
 .pie{padding:64px 0 36px;border-top:1px solid #E3E7F2}
 .pie .fila{display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between}
 .pie nav{display:flex;flex-direction:column;gap:12px}
@@ -222,19 +227,19 @@ textarea{padding:12px 14px;resize:vertical}
     <form aria-label="Formulario de contacto" onsubmit="event.preventDefault();alertaMaqueta()">
       <div class="campo"><label for="f-nombre">Nombre y apellido</label><input id="f-nombre" autocomplete="name" required></div>
       <div class="campo"><label for="f-correo">Correo electrónico</label><input id="f-correo" type="email" autocomplete="email" required></div>
-      <div class="campo"><label for="f-empresa">Empresa u organización <span style="font-weight:400;color:var(--claro-osc)">(opcional)</span></label><input id="f-empresa" autocomplete="organization"></div>
+      <div class="campo"><label for="f-empresa">Empresa u organización <span class="nota">(opcional)</span></label><input id="f-empresa" autocomplete="organization"></div>
       <div class="campo"><label for="f-motivo">Motivo de contacto</label>
         <select id="f-motivo" required><option value="">Selecciona una opción</option><option>Información general</option><option>Alianzas estratégicas</option><option>Prensa y medios</option><option>Proveedores</option><option>Otro</option></select></div>
       <div class="campo"><label for="f-mensaje">Mensaje</label><textarea id="f-mensaje" rows="4" required></textarea></div>
       <div style="display:flex;gap:12px;align-items:flex-start">
-        <input id="f-privacidad" type="checkbox" required style="width:22px;height:22px;min-height:0;margin:2px 0 0;accent-color:var(--turquesa)">
-        <label for="f-privacidad" style="font-weight:400;color:var(--claro-osc);line-height:1.5">Acepto la <a href="#" style="color:var(--turquesa)">política de privacidad</a>.</label>
+        <input id="f-privacidad" type="checkbox" required style="width:22px;height:22px;min-height:0;margin:2px 0 0;accent-color:var(--azul)">
+        <label for="f-privacidad" style="font-weight:400;line-height:1.5">Acepto la <a href="#">política de privacidad</a>.</label>
       </div>
       <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between">
         <button class="boton" type="submit" style="background:var(--turquesa);color:#0A0F33">Solicitar información</button>
-        <span style="font-size:12px;color:var(--claro-osc)">Maqueta: el formulario no envía nada</span>
+        <span class="nota" style="font-size:12px">Maqueta: el formulario no envía nada</span>
       </div>
-      <p id="aviso-form" role="status" style="margin:0;font-size:14px;color:var(--turquesa)"></p>
+      <p id="aviso-form" role="status" style="margin:0;font-size:14px;color:var(--azul)"></p>
     </form>
   </div>
 </section>
