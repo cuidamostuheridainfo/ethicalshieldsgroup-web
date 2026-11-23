@@ -2,19 +2,23 @@
    Arriba: una cúpula de pantallas genéricas, todas distintas (./mercado/m01..m66.svg, una distinta por pantalla), que gira despacio.
    La persona elige: cuatro pantallas se encienden, bajan y se convierten en las empresas del grupo,
    dos a cada lado de la persona. Al final la cúpula se atenúa y quedan destacadas las cuatro empresas.
-   Respeta pausa manual, pausa fuera de pantalla o con pestaña oculta y movimiento reducido. */
+   Respeta pausa manual, pausa fuera de pantalla o con pestaña oculta y movimiento reducido.
+   23 nov 2026 (Jenny): tarjetas con imagen arriba y texto abajo; arriba Medical Shields y Cuidamos tu Herida,
+   abajo Cumbre CHP y Ethical Shields AI, y bajan en ese orden. El hero mide lo que la pantalla y las tarjetas
+   se ubican entre el botón principal y el de pausa; solo si no caben, el hero crece. */
 (function(){
   'use strict';
   var hero=document.querySelector('.hero'), mundo=document.getElementById('mundo'), boton=document.getElementById('pausa');
   if(!hero||!mundo)return;
   function el(tag,clase,texto){var n=document.createElement(tag);if(clase)n.className=clase;if(texto)n.textContent=texto;return n;}
 
-  // Las cuatro empresas, en el orden en que la persona las elige.
+  // Las cuatro empresas, en el orden en que la persona las elige. fila 0 = arriba, lado -1 = izquierda.
+  // linea: PC; corta: tableta y teléfono (hasta 1100 px).
   var EMPRESAS=[
-    {id:'cth',nombre:'Cuidamos tu Herida',linea:'Especialistas en heridas y piel, para pacientes e instituciones',lado:-1,fila:0},
-    {id:'cumbre',nombre:'Cumbre CHP',linea:'Encuentro interdisciplinario de la medicina para el cuidado de heridas y longevidad',lado:1,fila:0},
-    {id:'medical',nombre:'Medical Shields',linea:'Especializada en soluciones y tecnología para el sector salud',lado:-1,fila:1},
-    {id:'ai',nombre:'Ethical Shields AI',linea:'Inteligencia artificial para empresas',lado:1,fila:1}
+    {id:'medical',nombre:'Medical Shields',linea:'Representación exclusiva de laboratorios internacionales y marcas en Venezuela',corta:'Representación exclusiva de Lab. internacionales y marcas en Vzla.',lado:-1,fila:0},
+    {id:'cth',nombre:'Cuidamos tu Herida',linea:'Atención médica especializada en heridas y piel',corta:'Atención médica especializada',lado:1,fila:0},
+    {id:'cumbre',nombre:'Cumbre CHP',linea:'Encuentro interdisciplinario médico',corta:'Encuentro interdisciplinario médico',lado:-1,fila:1},
+    {id:'ai',nombre:'Ethical Shields AI',linea:'IA aplicada a empresas',corta:'IA aplicada a empresas',lado:1,fila:1}
   ];
   var INICIO=2600, PASO=2300, VUELO=1700;   // ms: primera elección, separación entre elecciones, duración del vuelo
   var FIN=INICIO+PASO*3+VUELO;               // a partir de aquí la escena queda en su estado final
@@ -32,8 +36,8 @@
   // Tarjetas de las empresas: nacen en la cúpula y bajan junto a la persona.
   var tarjetas=EMPRESAS.map(function(e){
     var t=el('div','tarjeta-empresa');t.dataset.empresa=e.id;
-    var foto=el('div','te-foto'),img=el('img');img.src='./escenas-ecosistema/'+e.id+'.webp';img.alt='';img.decoding='async';foto.appendChild(img);
-    var txt=el('div','te-texto');txt.appendChild(el('span','te-nombre',e.nombre));txt.appendChild(el('span','te-linea',e.linea));
+    var foto=el('div','te-foto'),img=el('img');img.src='./escenas-ecosistema/'+(e.id==='medical'?'medical-fondo':e.id)+'.webp';img.alt='';img.decoding='async';foto.appendChild(img);
+    var txt=el('div','te-texto');txt.appendChild(el('span','te-nombre',e.nombre));txt.appendChild(el('span','te-linea te-larga',e.linea));txt.appendChild(el('span','te-linea te-corta',e.corta));
     if(e.estado)txt.appendChild(el('span','te-estado',e.estado));
     t.appendChild(foto);t.appendChild(txt);mundo.appendChild(t);
     return {nodo:t,datos:e,origen:null,fuente:null};
@@ -43,12 +47,26 @@
   var reducida=window.matchMedia('(prefers-reduced-motion: reduce)');
   function suave(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;}
 
+  // Zona libre para las tarjetas: debajo del botón principal y encima del botón de pausa.
+  var zona={T:0,B:0};
+  function medirZona(){
+    var hr=hero.getBoundingClientRect(), cta=hero.querySelector('a[href="#empresas"]'), pz=document.getElementById('pausa');
+    zona.T=cta?cta.getBoundingClientRect().bottom-hr.top+18:alto*.45;
+    var B=alto-20; if(pz){var pr=pz.getBoundingClientRect();if(pr.height&&pr.top-hr.top>alto*.6)B=Math.min(B,pr.top-hr.top-12);}
+    zona.B=B;
+  }
+  function plan(){
+    // Devuelve el tamaño y las alturas de las dos filas, y cuántos px le faltan al hero (0 si cabe).
+    var w=movil?Math.min(168,ancho*.42):Math.min(250,Math.max(190,ancho*.16)), h=w*(ancho<380?1.27:ancho<=1100?1.14:1.1), T=zona.T, B=zona.B, y0, y1, falta;
+    if(movil){y0=Math.max(T+h/2,Math.min(alto*.585,B-h-10-h/2));y1=y0+h+10;falta=Math.max(0,y1+h/2-B);}
+    else{var d=Math.min(alto*.1,Math.max(0,(B-T)-h));y1=Math.min(alto*.76,B-h/2);y0=y1-d;if(y0-h/2<T){y0=T+h/2;y1=y0+d;}falta=Math.max(0,y1+h/2-B);}
+    return {w:w,h:h,y0:y0,y1:y1,falta:falta};
+  }
+  var P=null;
   function destino(e){
-    // PC: dos a cada lado, la interior más baja; teléfono: dos columnas a los costados.
-    var w=movil?Math.min(168,ancho*.42):Math.min(250,Math.max(190,ancho*.16)), h=w*(movil?.95:.78);
-    var x,y;
-    if(movil){x=ancho*.5+e.lado*(ancho*.5-w*.5-8);y=alto*(e.fila?.765:.585);}
-    else{x=ancho*.5+e.lado*ancho*(e.fila?.34:.17);y=alto*(e.fila?.66:.76);}
+    var w=P.w,h=P.h,x,y=e.fila?P.y1:P.y0;
+    if(movil)x=ancho*.5+e.lado*(ancho*.5-w*.5-8);
+    else x=ancho*.5+e.lado*ancho*(e.fila?.17:(ancho<1200?.365:.34));
     return {x:x,y:y,w:w,h:h};
   }
 
@@ -105,11 +123,17 @@
     }
   }
   function dimensionar(){
-    ancho=hero.clientWidth;alto=hero.clientHeight;movil=ancho<=820;
+    hero.style.minHeight='';
+    ancho=hero.clientWidth;alto=hero.clientHeight;movil=ancho<=820;medirZona();P=plan();
+    // Si en una pantalla baja las tarjetas no caben, el hero crece solo lo necesario.
+    if(P.falta>0){hero.style.minHeight=Math.ceil(alto+P.falta)+'px';ancho=hero.clientWidth;alto=hero.clientHeight;medirZona();P=plan();}
     // Al cambiar de tamaño, las tarjetas que ya llegaron se quedan en su lugar nuevo.
     tarjetas.forEach(function(t){if(reloj>=FIN){t.origen=t.origen||{x:0,y:0,w:0,h:0};}});
     dibujar();
   }
+  // WhatsApp: en el teléfono se oculta mientras se ve el hero (el CSS solo lo aplica hasta 820 px).
+  var wa=document.querySelector('.whatsapp');
+  if(wa&&'IntersectionObserver' in window)new IntersectionObserver(function(e){wa.dataset.oculto=e[0].isIntersecting?'si':'no';},{threshold:.35}).observe(hero);
   if(boton)boton.addEventListener('click',function(){manual=!manual;aplicar();});
   if('IntersectionObserver' in window)new IntersectionObserver(function(e){visible=e[0].isIntersecting;aplicar();}).observe(hero);
   document.addEventListener('visibilitychange',aplicar);

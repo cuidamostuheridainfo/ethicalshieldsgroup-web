@@ -1,5 +1,15 @@
 # Decisiones vigentes
 
+## 23 nov 2026: tarjetas del hero (Jenny)
+
+- **Diseño:** imagen arriba con corte limpio y texto abajo, centrado, sobre fondo casi blanco (#fbfcfe), con nombre azul marino y puntos de color oscurecidos. Las cuatro tarjetas tienen el mismo tamaño. Reemplaza el texto sobre la imagen con degradado oscuro.
+- **Posiciones y orden de bajada:** Medical Shields arriba a la izquierda, Cuidamos tu Herida arriba a la derecha, Cumbre CHP abajo a la izquierda y Ethical Shields AI abajo a la derecha. Reemplaza el orden CTH, Cumbre, Medical Shields, AI.
+- **Textos:** los de CONTENIDOS del 23 nov. Medical Shields se presenta como representante exclusivo en Venezuela de laboratorios internacionales y marcas (confirmado por Jenny). CTH, como atención médica especializada.
+- **Imagen de Medical Shields:** solo el fondo de la ilustración original, sin la pareja del primer plano.
+- **Alto del hero:** el de la pantalla (mínimo 620 px), con las tarjetas siempre debajo del botón principal. Reemplaza el mínimo de 900 px.
+- **WhatsApp:** en el teléfono aparece al salir del hero.
+
+
 ## 18 nov 2026: órbita única y ordenada
 
 Jenny solicita una vuelta ordenada alrededor del hombre. Se adopta una sola elipse con 16 ángulos equidistantes, velocidad común y un solo sentido; se reemplazan las dos bandas contrapuestas y los movimientos independientes. Sin líneas de conexión. Se conservan las 16 escenas y los nombres.
@@ -80,7 +90,7 @@ Lo que está aquí ya se decidió. No se reabre salvo que Jenny lo pida o aparez
   - las pantallas representan las nueve áreas del ecosistema, no solo IA;
   - debe transmitir orden y no caos;
   - incluye una versión estática para movimiento reducido.
-- **Textos de las tarjetas del hero (19 nov, Jenny):** ver CONTENIDOS. Ethical Shields AI se describe como "Inteligencia artificial para empresas", sin la etiqueta "En desarrollo".
+- ~~**Textos de las tarjetas del hero (19 nov, Jenny):** Ethical Shields AI se describe como "Inteligencia artificial para empresas", sin la etiqueta "En desarrollo".~~ Reemplazado el 23 nov: ver CONTENIDOS.
 - **Hero "mar de soluciones" (18 nov, noche, Jenny; reemplaza la órbita de ventanas):** arriba, una cúpula de pantallas genéricas del mercado, todas distintas. La persona "elige" y bajan las cuatro empresas del grupo, que quedan dos a cada lado de ella. Mensaje: en un mar de opciones, la solución está en el grupo.
 - ~~Órbita del hero~~ (reemplazada el mismo día): una sola órbita, separación y velocidad iguales para todas las ventanas, sin amontonamientos. Son 8 ventanas en PC y tableta y 6 en teléfono, alternadas por empresa. Cada ventana lleva empresa, título corto y estado.
 - **Hero (18 nov, Jenny):**

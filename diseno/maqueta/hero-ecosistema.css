@@ -1,5 +1,5 @@
 /* Escenas originales del ecosistema. Solo afecta al hero de la maqueta. */
-.hero{min-height:max(100svh,900px)}
+.hero{min-height:max(100svh,620px)}
 .hero-fondo{background:radial-gradient(ellipse at 50% 77%,#123c57,#080e2b 57%,#050820)}
 .hero-velo{background:linear-gradient(180deg,#070b26e8,rgba(7,11,38,.68) 27%,transparent 44%,transparent 91%,#070b26c9)}
 .hero-texto{pointer-events:none}
@@ -58,7 +58,7 @@
 @keyframes separar-capas{from{transform:translateY(0)}to{transform:translateY(-5px)}}
 @keyframes orbital-celula{to{transform:rotate(360deg)}}
 @media(max-width:820px){
- .hero{min-height:max(100svh,900px)}
+ .hero{min-height:max(100svh,620px)}
  .hero .hero-texto{padding-top:115px}
  .hero .hero-texto h1{font-size:clamp(29px,5.1vw,42px)}
  .hero .hero-texto .boton{font-size:14px;min-height:48px;padding:0 21px;margin-top:23px}
@@ -143,23 +143,33 @@
 .mosaico{border-color:#9fb3e055!important;box-shadow:0 0 12px #6f8fd61f!important;border-radius:5px}
 .mosaico img{filter:saturate(.85) brightness(1.08)!important}
 .tarjeta-empresa{position:absolute;left:0;top:0;z-index:120;border-radius:14px;overflow:hidden;visibility:hidden;opacity:0;
-  background:#071329;border:1.5px solid var(--acento,#19e6df);will-change:transform,width,height,opacity;
+  display:flex;flex-direction:column;background:#fbfcfe;border:1.5px solid var(--acento,#19e6df);will-change:transform,width,height,opacity;
   box-shadow:0 18px 50px #0008,0 0 calc(10px + 26px*var(--revela,0)) color-mix(in srgb,var(--acento,#19e6df) 55%,transparent)}
-.tarjeta-empresa[data-empresa="cth"]{--acento:#65f2d7}
-.tarjeta-empresa[data-empresa="cumbre"]{--acento:#b9a0ff}
-.tarjeta-empresa[data-empresa="medical"]{--acento:#75cbff}
-.tarjeta-empresa[data-empresa="ai"]{--acento:#ffc58b}
-.tarjeta-empresa .te-foto{position:absolute;inset:0}
+/* 23 nov 2026 (Jenny): imagen arriba con corte limpio y texto abajo, centrado, sobre fondo casi blanco.
+   --acento: borde y brillo de la tarjeta sobre el hero oscuro. --punto: punto junto al nombre, más oscuro para el fondo claro. */
+.tarjeta-empresa[data-empresa="medical"]{--acento:#75cbff;--punto:#1b7fd4}
+.tarjeta-empresa[data-empresa="cth"]{--acento:#65f2d7;--punto:#0f9e84}
+.tarjeta-empresa[data-empresa="cumbre"]{--acento:#b9a0ff;--punto:#7448e0}
+.tarjeta-empresa[data-empresa="ai"]{--acento:#ffc58b;--punto:#e0821f}
+.tarjeta-empresa .te-foto{position:relative;flex:0 0 auto;aspect-ratio:16/10;border-bottom:1px solid #e3e9f2}
 .tarjeta-empresa .te-foto img{width:100%;height:100%;object-fit:cover;display:block}
-.tarjeta-empresa .te-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#06132c22 0%,#06132c10 35%,#06132cee 78%)}
-.tarjeta-empresa .te-texto{position:absolute;left:12px;right:12px;bottom:11px;display:flex;flex-direction:column;gap:3px;opacity:var(--revela,0);color:#fff}
-.tarjeta-empresa .te-nombre{font-size:17px;font-weight:800;letter-spacing:-.01em;line-height:1.15;text-shadow:0 2px 8px #030818}
-.tarjeta-empresa .te-nombre::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--acento);box-shadow:0 0 10px var(--acento);margin-right:7px;vertical-align:2px}
-.tarjeta-empresa .te-linea{font-size:13px;line-height:1.35;color:#dbe6f5}
-.tarjeta-empresa .te-estado{align-self:flex-start;margin-top:4px;font-size:12px;font-weight:600;padding:3px 8px;border-radius:20px;background:#06132ce6;border:1px solid color-mix(in srgb,var(--acento) 60%,transparent)}
+.tarjeta-empresa .te-texto{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:3px;padding:10px 12px 12px;text-align:center;opacity:var(--revela,0)}
+.tarjeta-empresa .te-nombre{font-size:16.15px;font-weight:800;letter-spacing:-.01em;line-height:1.15;white-space:nowrap;color:#0d1b3d}
+.tarjeta-empresa .te-nombre::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--punto);box-shadow:0 0 0 3px color-mix(in srgb,var(--punto) 22%,transparent);margin-right:7px;vertical-align:2px}
+.tarjeta-empresa .te-linea{font-size:12.35px;line-height:1.35;color:#3b4a66}
+.tarjeta-empresa .te-corta{display:none}
+/* Tableta y teléfono: texto corto de cada empresa. */
+@media(max-width:1100px){
+  .tarjeta-empresa .te-larga{display:none}
+  .tarjeta-empresa .te-corta{display:block}
+}
 @media(max-width:820px){
   .tarjeta-empresa{border-radius:12px}
-  .tarjeta-empresa .te-texto{left:9px;right:8px;bottom:9px}
-  .tarjeta-empresa .te-nombre{font-size:14px}
-  .tarjeta-empresa .te-linea{font-size:12px}
+  .tarjeta-empresa .te-foto{aspect-ratio:16/9}
+  .tarjeta-empresa .te-texto{padding:7px 8px 9px}
+  .tarjeta-empresa .te-nombre{font-size:13.3px}
+  .tarjeta-empresa .te-linea{font-size:11.4px}
+  /* WhatsApp: en el teléfono aparece al salir del hero, para no tapar las tarjetas. */
+  .whatsapp{transition:opacity .3s,transform .3s}
+  .whatsapp[data-oculto="si"]{opacity:0;transform:translateY(16px);pointer-events:none}
 }

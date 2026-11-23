@@ -31,14 +31,20 @@ Los textos que faltan van entre corchetes. En el código, estos textos vivirán 
 | Botón | Conoce nuestras empresas (lleva a #empresas) | APROBADO |
 | Áreas de las pantallas | Salud · Atención especializada · Tecnología · Consultoría empresarial · Investigación científica · Formación profesional · Inteligencia artificial · Automatización · Gestión empresarial | APROBADO |
 
-### Tarjetas de las empresas en el hero (19 nov)
+### Tarjetas de las empresas en el hero (23 nov, Jenny)
 
-| Empresa | Línea | Estado |
-| --- | --- | --- |
-| Medical Shields | Especializada en soluciones y tecnología para el sector salud | APROBADO |
-| Cuidamos tu Herida | Especialistas en heridas y piel, para pacientes e instituciones | PROPUESTA |
-| Ethical Shields AI | Inteligencia artificial para empresas | APROBADO |
-| Cumbre CHP | Encuentro interdisciplinario de la medicina para el cuidado de heridas y longevidad | APROBADO |
+En PC va la línea larga; en tableta y teléfono (hasta 1100 px), la corta. El orden es el de la tabla: arriba Medical Shields (izquierda) y Cuidamos tu Herida (derecha); abajo Cumbre CHP (izquierda) y Ethical Shields AI (derecha).
+
+| Empresa | PC | Tableta y teléfono | Estado |
+| --- | --- | --- | --- |
+| Medical Shields | Representación exclusiva de laboratorios internacionales y marcas en Venezuela | Representación exclusiva de Lab. internacionales y marcas en Vzla. | APROBADO (23 nov) |
+| Cuidamos tu Herida | Atención médica especializada en heridas y piel | Atención médica especializada | APROBADO (23 nov) |
+| Cumbre CHP | Encuentro interdisciplinario médico | Igual | APROBADO (23 nov) |
+| Ethical Shields AI | IA aplicada a empresas | Igual | APROBADO (23 nov) |
+
+Origen: observación de Marisol (Social Media). Medical Shields es una casa de representación exclusiva en Venezuela de laboratorios internacionales, y CTH presta atención médica especializada con sus propios médicos. Jenny confirmó que la representación es exclusiva y que se menciona Venezuela.
+
+Textos anteriores (19 nov), reemplazados: Medical Shields "Especializada en soluciones y tecnología para el sector salud"; Cuidamos tu Herida "Especialistas en heridas y piel, para pacientes e instituciones"; Ethical Shields AI "Inteligencia artificial para empresas"; Cumbre CHP "Encuentro interdisciplinario de la medicina para el cuidado de heridas y longevidad".
 
 ## 2. Quiénes somos
 

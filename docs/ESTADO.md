@@ -1,8 +1,18 @@
 # Estado del proyecto
 
-Última actualización: 19 de noviembre de 2026, cierre de sesión.
+Última actualización: 23 de noviembre de 2026.
 
-**Resumen para retomar:** estamos en la **Etapa A** y la maqueta de la homepage está en revisión del comité. No hay sitio definitivo, no hay cuentas ni servicios creados y no se tocó el DNS. El hero vigente es el "mar de soluciones": la cúpula de pantallas genéricas, la bajada de las cuatro empresas y la persona realista. El enlace del comité es https://cuidamostuheridainfo.github.io/ethicalshieldsgroup-web/. El último commit es `483a613`. Los pendientes, en orden, están en `PENDIENTES.md`.
+**Resumen para retomar:** estamos en la **Etapa A** y la maqueta de la homepage está en revisión del comité. No hay sitio definitivo, no hay cuentas ni servicios creados y no se tocó el DNS. El hero vigente es el "mar de soluciones": la cúpula de pantallas genéricas, la bajada de las cuatro empresas y la persona realista. Las tarjetas se rediseñaron el 23 nov (imagen arriba, texto abajo sobre fondo claro y textos nuevos). El enlace del comité es https://cuidamostuheridainfo.github.io/ethicalshieldsgroup-web/. El último commit con push es `483a613`; los cambios del 23 nov esperan el commit de Jenny. Los pendientes, en orden, están en `PENDIENTES.md`.
+
+## 23 nov 2026: rediseño de las tarjetas del hero (pedido de Jenny, a partir de una observación de Marisol)
+
+- **Diseño de la tarjeta:** la imagen va arriba, completa y con un corte limpio. Debajo hay una franja casi blanca (#fbfcfe) con el nombre en azul marino y la línea en gris azulado, ambos centrados. El texto ya no tapa la imagen, que antes ocultaba la curación del brazo en CTH y los productos en Medical Shields. La letra es un 5 % más pequeña: los cuatro nombres caben en una línea en todos los anchos. Los puntos de color son más oscuros y llevan un aro suave para verse sobre el fondo claro. El borde y el brillo de cada tarjeta no cambian.
+- **Textos:** ver CONTENIDOS. Hay una línea para PC y otra corta para tableta y teléfono.
+- **Posiciones y orden:** arriba Medical Shields (izquierda) y Cuidamos tu Herida (derecha); abajo Cumbre CHP (izquierda) y Ethical Shields AI (derecha). En PC, "arriba" es el par exterior, más alto. Las empresas bajan de la cúpula en ese mismo orden.
+- **Imagen de Medical Shields:** se quitó la pareja del primer plano, porque no se entendía qué miraban. Se recortó la zona del fondo de la ilustración original: el globo con su red de conexiones y personas cerrando una alianza. Archivo: `escenas-ecosistema/medical-fondo.webp` (406×254). Se intentó editar la imagen con IA en Canva, pero el sistema bloqueó el envío y no se forzó.
+- **Alto del hero:** antes medía 900 px como mínimo y la fila de abajo quedaba fuera de pantalla en portátiles, tabletas y teléfonos bajos. Ahora mide lo que la pantalla (mínimo 620 px). Las tarjetas se ubican entre el botón "Conoce nuestras empresas" y el botón de pausa, y el hero solo crece si no caben.
+- **WhatsApp en el teléfono:** se oculta mientras se ve el hero, para no tapar las tarjetas, y aparece al bajar. En PC y tableta no cambia.
+- **Pruebas:** ver PRUEBAS. Falta la prueba en el iPhone de Jenny.
 
 ## 19 nov 2026: textos de las tarjetas del hero (pedido de Jenny)
 

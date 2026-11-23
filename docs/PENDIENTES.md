@@ -1,14 +1,13 @@
 # Pendientes
 
-Última actualización: 19 de noviembre de 2026, cierre de sesión.
+Última actualización: 23 de noviembre de 2026.
 
 ## Siguiente paso, en este orden
 
 1. **Respuesta del comité** sobre la maqueta: la portada ("mar de soluciones") y el orden de las secciones. Enlace: https://cuidamostuheridainfo.github.io/ethicalshieldsgroup-web/ (GitHub Pages; se actualiza con cada push). El mensaje para el comité está en el chat del 18 nov.
-2. **Prueba en el iPhone de Jenny:** la secuencia completa del hero (la cúpula, la bajada de las cuatro empresas y el estado final), la fluidez, la legibilidad de las tarjetas y el botón de pausa.
-3. **Texto de Cuidamos tu Herida** en la tarjeta del hero: Jenny confirma la propuesta ("Especialistas en heridas y piel, para pacientes e instituciones") o elige una alternativa (ver CONTENIDOS).
-4. **Opcional, según el comité:** versión corta del texto de la Cumbre en el teléfono, que hoy ocupa cinco líneas.
-5. Jenny responde las decisiones D-02, D-05 y D-09 a D-11 y autoriza (o no) la Etapa B. Hasta entonces no se escribe el sitio definitivo ni se crea ninguna cuenta o servicio.
+2. **Prueba en el iPhone de Jenny** con las tarjetas del 23 nov: la secuencia completa del hero, la fluidez, la legibilidad del texto sobre el fondo claro, la nitidez de la imagen de Medical Shields, el botón de pausa y que WhatsApp aparezca al bajar.
+3. **Opcional: imagen nueva de Medical Shields.** El recorte actual (406×254) se ve bien en PC, pero puede verse algo menos nítido en pantallas de alta densidad. Si se quiere una imagen nueva sin personas en primer plano, Jenny la genera en Canva o ChatGPT (Claude prepara el texto para pedirla) o autoriza el uso de Canva desde Claude.
+4. Jenny responde las decisiones D-02, D-05 y D-09 a D-11 y autoriza (o no) la Etapa B. Hasta entonces no se escribe el sitio definitivo ni se crea ninguna cuenta o servicio.
 
 ## Limpieza (cuando Jenny lo decida)
 

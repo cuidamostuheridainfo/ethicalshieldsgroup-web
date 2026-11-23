@@ -1,5 +1,18 @@
 # Pruebas
 
+## 23 nov 2026: tarjetas del hero rediseñadas
+
+Chrome local (Playwright) sobre `diseno/maqueta/index.html`, con la animación completa y con movimiento reducido, en 1920×1080, 1440×900, 1366×657, 1280×720, 1024×768, 820×1180, 768×1024, 390×844, 375×667 y 360×740:
+- sin errores de consola ni desborde horizontal;
+- ninguna tarjeta se superpone con otra ni con el botón "Conoce nuestras empresas";
+- los cuatro nombres caben en una línea y los textos caben en su tarjeta, sin tocar la imagen;
+- Medical Shields y Cumbre CHP a la izquierda; las empresas bajan en el orden Medical Shields, Cuidamos tu Herida, Cumbre CHP y Ethical Shields AI;
+- el botón de pausa detiene la animación;
+- WhatsApp: visible en PC y tableta horizontal; en el teléfono y la tableta vertical, oculto en el hero.
+
+Las cuatro tarjetas caben completas en la primera pantalla en todos los tamaños menos dos: en 360×740 faltan 10 px y en 375×667 (iPhone SE) faltan 99 px, así que hay que bajar un poco. Pendiente: iPhone de Jenny.
+
+
 ## 18 nov 2026: órbita única y ordenada
 
 Validación de sintaxis y simulación lógica: 16 ventanas, 32 caras, separación angular uniforme durante un ciclo, ninguna pantalla fija y desplazamiento común sin cruces; dimensiones y posiciones finitas a 360, 390, 768, 820, 1024, 1440 y 1920 px; límites horizontales, pausa, pestaña oculta y movimiento reducido. No se modifican imágenes, persona ni h1. Revisión visual en navegador local pendiente.
@@ -95,4 +108,5 @@ Aquí se anota cada imagen, ícono o fuente que se incorpore al proyecto, con su
 | Foto de fondo del hero (`diseno/hero/fondo-persona.png`) | Generada con IA en Canva por Jenny (18 nov), a partir de la opción 3 y sin pantallas | Uso según los términos de Canva para imágenes generadas | Hero |
 | Recorte de la persona (`persona-recorte.png`) | Hecho por Claude con rembg (isnet-general-use) a partir del fondo | Derivado del anterior | Hero |
 | Ilustraciones de las pantallas (`diseno/hero/pantallas/*.svg`) | Dibujadas por Claude con `herramientas/generar_pantallas.py` (18 nov). Reemplazan las fotos reales, que se descartaron por decisión de Jenny | Propias | Pantallas del hero |
+| Imagen de Medical Shields en el hero (`diseno/maqueta/escenas-ecosistema/medical-fondo.webp`) | Recorte hecho por Claude (23 nov) de la ilustración con IA `medical.jpg`, sin la pareja del primer plano | Derivado de la ilustración original | Tarjeta de Medical Shields en el hero |
 | Símbolo "Evolución de origen" | Redibujado en vector a partir de la imagen aprobada por el comité (16 nov); no se copió ningún archivo | Propiedad del grupo | `diseno/logo/` |
